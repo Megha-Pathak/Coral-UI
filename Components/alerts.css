@@ -1,0 +1,34 @@
+.alert {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 0.3rem;
+    max-width: fit-content;
+    border-radius: 0.3rem;
+    box-shadow: var(--primary-box-shadow);
+  }
+  
+  .al-error {
+    background-color: var(--lt-pink);
+    color: var(--dk-pink);
+    border: 2px solid var(--dk-pink);
+  }
+  
+  .al-warning {
+    background-color: var(--lt-yellow);
+    color: var(--dk-yellow);
+    border: 2px solid var(--dk-yellow);
+  }
+  
+  .al-info {
+    background-color: var(--lt-blue);
+    color: var(--dk-blue);
+    border: 2px solid var(--dk-blue);
+  }
+  
+  .al-success {
+    background-color: var(--lt-green);
+    color: var(--dk-green);
+    border: 2px solid var(--dk-green);
+  }
+  
