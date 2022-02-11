@@ -1,0 +1,36 @@
+/* badges */
+.badge-av {
+    position: relative;
+  }
+  
+  .badge-icon {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding: 0.85rem;
+  }
+  
+  .bdg-bttm {
+    position: absolute;
+    bottom: 0.1rem;
+    right: 0.1rem;
+  }
+  
+  .bdg-top {
+    position: absolute;
+    top: -0.3rem;
+    display: flex;
+    right: -0.2rem;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+  }
+  
+  .badge {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  

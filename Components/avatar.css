@@ -1,0 +1,46 @@
+/* Avatar */
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--primary-box-shadow);
+  }
+  
+  .av-sm {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .av-md {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .av-lg {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .av-blue {
+    background-color: var(--lt-blue);
+    color: var(--dk-blue);
+  }
+  
+  .av-green {
+    background-color: var(--lt-green);
+    color: var(--dk-green);
+  }
+  
+  .av-yellow {
+    background-color: var(--lt-yellow);
+    color: var(--dk-yellow);
+  }
+  
+  .av-pink {
+    background-color: var(--lt-pink);
+    color: var(--dk-pink);
+  }
+  
