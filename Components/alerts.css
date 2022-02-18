@@ -4,8 +4,7 @@
     align-items: center;
     padding: 0.3rem;
     max-width: fit-content;
-    border-radius: 0.3rem;
-    box-shadow: var(--primary-box-shadow);
+    border-radius: 0.4rem;
   }
   
   .al-error {

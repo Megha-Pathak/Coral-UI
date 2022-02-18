@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coral UI | Docs</title>
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./Documentation/docs.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Recursive:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="grid-container-pagelayout">
+      <nav class="nav-bar shadow-box" id="my-nav-bar">
+        <div class="nav-section">
+          <div class="nav-logo nav-section-items" id="my-logo">
+            <a class="link-no-style" href="/">
+              <div class="primary-text-color logo-title">
+                <span class="tertiary-text-color"> Coral UI </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="sidebar grid-item shadow-bottom" id="my-side-bar">
+        <div class="nav-bar-opening-button">
+          <h2 class="h5 nav-title">Components</h2>
+          <span class="sidebar-arrow"
+            ><i class="h5 fas fa-chevron-down"></i
+          ></span>
+        </div>
+        <ul class="nav-links">
+          <li class="nav-link-item"><a href="#Alerts">Alerts</a></li>
+          <li class="nav-link-item"><a href="#Avatar">Avatar</a></li>
+          <li class="nav-link-item"><a href="#Badge">Badge</a></li>
+          <li class="nav-link-item"><a href="#Button">Button</a></li>
+          <li class="nav-link-item"><a href="#Cards">Cards</a></li>
+          <li class="nav-link-item"><a href="#Image">Image</a></li>
+          <li class="nav-link-item"><a href="#Input">Input</a></li>
+        </ul>
+      </div>
+      <section class="main grid-item">
+        <div id="Alerts">
+          <div class="component-intro">
+            <h1>Alerts</h1>
+          </div>
+          <p>
+            Display text in a dialog box that pops up on the screen and conveys
+            meaning through color with a handful of color utility classes.
+          </p>
+          <div class="component-display-container display-flex-column">
+            <h3 class="secondary-txt-showcase">Error alert</h3>
+            <div class="alert al-error">
+              <i class="fas fa-exclamation-circle"></i>
+              <p>This is an error alert!</p>
+              <i class="fas fa-times"></i>
+            </div>
+            <h3 class="secondary-txt-showcase">Warning alert</h3>
+            <div class="alert al-warning">
+              <i class="fas fa-exclamation-triangle"></i>
+              <p>This is an warning alert!</p>
+              <i class="fas fa-times"></i>
+            </div>
+            <h3 class="secondary-txt-showcase">Info alert</h3>
+            <div class="alert al-info">
+              <i class="fas fa-info-circle"></i>
+              <p>This is an info alert!</p>
+              <i class="fas fa-times"></i>
+            </div>
+            <h3 class="secondary-txt-showcase">Success alert</h3>
+            <div class="alert al-success">
+              <i class="fas fa-check-circle"></i>
+              <p>This is an success alert!</p>
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+          <div class="code-snippet-display">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Ch3%2520class%253D%2522secondary-txt-showcase%2522%253EWarning%2520alert%253C%252Fh3%253E%250A%253Cdiv%2520class%253D%2522alert%2520al-warning%2522%253E%250A%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%250A%253Cp%253EThis%2520is%2520an%2520warning%2520alert%21%253C%252Fp%253E%250A%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E"
+                style="
+                  width: 592px;
+                  height: 299px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </div>
+        <hr />
+        <div id="Avatar">
+          <div class="component-intro">
+            <h1>Avatar</h1>
+          </div>
+          <p>
+            Avatar is a pure CSS control used to add initials, icons, or images
+            representing people or objects in different shapes and sizes.
+          </p>
+          <div class="component-display-container display-flex-column">
+            <h3 class="secondary-txt-showcase">Image avatars</h3>
+            <div class="showcase">
+              <img
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                class="avatar"
+                alt="Random Person Headshot"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1614644147798-f8c0fc9da7f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80"
+                class="avatar"
+                alt="Random Person Headshot"
+              />
+            </div>
+            <h3 class="secondary-txt-showcase">Initials avatars</h3>
+            <div class="showcase">
+              <div class="avatar av-sm av-blue">MP</div>
+              <div class="avatar av-sm av-pink">HP</div>
+              <div class="avatar av-sm av-yellow">SS</div>
+            </div>
+            <h3 class="secondary-txt-showcase">Social Icon avatars</h3>
+            <div class="showcase">
+              <div class="avatar av-sm av-pink">
+                <i class="fab fa-twitter"></i>
+              </div>
+              <div class="avatar av-sm av-blue">
+                <i class="fab fa-instagram"></i>
+              </div>
+              <div class="avatar av-sm av-green">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+            </div>
+            <h3 class="secondary-txt-showcase">Size avatars</h3>
+            <div class="showcase">
+              <img
+                class="avatar av-sm"
+                src="https://images.unsplash.com/photo-1614644147798-f8c0fc9da7f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80"
+                alt=""
+              />
+              <img
+                class="avatar"
+                src="https://images.unsplash.com/photo-1614644147798-f8c0fc9da7f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80"
+                alt=""
+              />
+              <img
+                class="avatar av-lg"
+                src="https://images.unsplash.com/photo-1614644147798-f8c0fc9da7f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="code-snippet-display">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Ch3%2520class%253D%2522secondary-txt-showcase%2522%253E%2520Initials%2520avatars%253C%252Fh3%253E%250A%253Cdiv%2520class%253D%2522showcase%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar%2520av-sm%2520av-blue%2522%253EMP%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar%2520av-sm%2520av-pink%2522%253E%2520HP%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar%2520av-sm%2520av-yellow%2522%253E%2520SS%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                style="
+                  width: 642px;
+                  height: 314px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </div>
+        <hr />
+        <div id="Badge">
+          <div class="component-intro">
+            <h1>Badge</h1>
+          </div>
+          <p>
+            Badges are indicators and convey additional information through
+            utility classes.
+          </p>
+          <div class="component-display-container display-flex-column">
+            <h3 class="secondary-txt-showcase">Badge on Icon</h3>
+            <div class="showcase">
+              <div class="badge-av">
+                <div class="badge-icon green bdg-top">10</div>
+                <div class="avatar av-green">
+                  <i class="fas fa-lg fa-bell"></i>
+                </div>
+              </div>
+              <div class="badge-av">
+                <div class="badge-icon pink bdg-top">8+</div>
+                <div class="avatar av-pink">
+                  <i class="fas fa-lg fa-heart"></i>
+                </div>
+              </div>
+              <div class="badge-av">
+                <div class="badge-icon yellow bdg-top">20</div>
+                <div class="avatar av-yellow">
+                  <i class="fas fa-lg fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="secondary-txt-showcase">Badge on Avatar</h3>
+            <div class="showcase">
+              <div class="badge-av">
+                <img
+                  class="avatar"
+                  src="https://images.unsplash.com/photo-1614644147798-f8c0fc9da7f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80"
+                  alt="Random Person"
+                />
+                <div class="badge green bdg-bttm"></div>
+              </div>
+              <div class="badge-av">
+                <img
+                  class="avatar"
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                  alt="Random Person"
+                />
+                <div class="badge yellow bdg-bttm"></div>
+              </div>
+              <div class="badge-av">
+                <img
+                  class="avatar"
+                  src="https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1188&q=80"
+                  alt="Random Person"
+                />
+                <div class="badge pink bdg-bttm"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="code-snippet-display">
+          <code>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Ch3%2520class%253D%2522secondary-txt-showcase%2522%253EBadge%2520on%2520Icons%253C%252Fh3%253E%250A%253Cdiv%2520class%253D%2522showcase%2522%253E%250A%253Cdiv%2520class%253D%2522badge-av%2522%253E%250A%253Cdiv%2520class%253D%2522badge-icon%2520green%2520bdg-top%2522%253E10%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520av-green%2522%253E%250A%253Ci%2520class%253D%2522fas%2520fa-lg%2520fa-bell%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-av%2522%253E%250A%253Cdiv%2520class%253D%2522badge-icon%2520pink%2520bdg-top%2522%253E8%252B%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520av-pink%2522%253E%250A%253Ci%2520class%253D%2522fas%2520fa-lg%2520fa-heart%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-av%2522%253E%250A%253Cdiv%2520class%253D%2522badge-icon%2520yellow%2520bdg-top%2522%253E20%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520av-yellow%2522%253E%250A%253Ci%2520class%253D%2522fas%2520fa-lg%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+              style="
+                width: 616px;
+                height: 633px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </code>
+        </div>
+
+        <hr />
+
+        <div id="Button">
+          <div class="component-intro">
+            <h1>Buttons</h1>
+          </div>
+          <p>
+            Buttons (sometimes also considered as call to action) helps user to
+            take further actions.
+          </p>
+          <div class="component-display-container">
+            <a href="#" class="btn flex-items btn-solid-primary">Solid</a>
+            <a class="btn flex-items btn-outline-primary">Outline</a>
+            <a class="link-text flex-items link-text-primary">Text</a>
+            <a class="btn flex-items btn-icon-primary"
+              ><span class="btn-icon"
+                ><i class="fas fa-shopping-cart"></i
+              ></span>
+            </a>
+            <a class="btn flex-items btn-text-icon-secondary btn-disabled"
+              ><span class="btn-icon"><i class="fas fa-minus"></i></span>
+              Disabled
+            </a>
+            <a class="btn flex-items btn-text-icon-primary"
+              ><span class="btn-icon"
+                ><i class="fas fa-shopping-cart"></i
+              ></span>
+              Text with Icon</a
+            >
+
+            <a class="btn btn-float-action"><i class="fas fa-plus"></i></a>
+          </div>
+
+          <div class="code-snippet-display">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522component-display-container%2522%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520flex-items%2520btn-solid-primary%2522%253ESolid%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520flex-items%2520btn-outline-primary%2522%253EOutline%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522link-text%2520flex-items%2520link-text-primary%2522%253EText%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520flex-items%2520btn-icon-primary%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520flex-items%2520btn-text-icon-secondary%2520btn-disabled%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522fas%2520fa-minus%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520Disabled%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520flex-items%2520btn-text-icon-primary%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520Text%2520with%2520Icon%253C%252Fa%253E%250A%253C%252Fdiv%253E"
+                style="
+                  width: 928px;
+                  height: 427px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </div>
+
+        <hr />
+
+        <div id="Cards">
+          <div class="component-intro">
+            <h1>Cards</h1>
+            <p>
+              Card a container-based user interface (UI) control built for
+              displaying organized content.
+            </p>
+          </div>
+
+          <div class="component-display-container display-flex-column">
+            <div class="card">
+              <img
+                class="card-img"
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                alt=""
+              />
+              <div class="bgde-lg pink"></div>
+              <div class="card-info">
+                <h3>Verticle card with Badge</h3>
+                <h4>More detail about Card</h4>
+                <div class="card-details">
+                  <p>Price</p>
+                  <button class="btn btn-icn-secondary secondary btn-card">
+                    <i class="fas fa-heart"></i>
+                    Move to Wishlist
+                  </button>
+                </div>
+              </div>
+              <button class="btn btn-solid-primary primary btn-card">
+                Shop Now
+              </button>
+            </div>
+
+            <div class="card-horizontal-cart">
+              <div class="card-horizontal">
+                <img
+                  class="card-horizontal-img"
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                  alt="random person"
+                />
+                <div class="card-info">
+                  <h3>Horizontal Card</h3>
+                  <small>More info about the card</small>
+                  <div class="card-details-horizontal">
+                    <div class="card-quant">
+                      <button class="floating-act badge-close flt-tri">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                      <p>2</p>
+                      <button class="floating-act badge-close flt-tri">
+                        <i class="fas fa-minus"></i>
+                      </button>
+                    </div>
+                    <p>Price</p>
+                  </div>
+                </div>
+              </div>
+              <div class="atn-btns">
+                <button class="btn btn-solid-primary primary btn-card">
+                  <i class="fas fa-shopping-cart"></i>
+                  Checkout
+                </button>
+                <button class="btn btn-icon-secondary secondary btn-card">
+                  <i class="fas fa-heart"></i>
+                  Move to Wishlist
+                </button>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <img
+                  class="card-img"
+                  src="https://images.unsplash.com/photo-1598030304671-5aa1d6f21128?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                  alt="vegetables photos"
+                />
+                <button class="floating-act badge-close">
+                  <i class="fas fa-lg fa-times"></i>
+                </button>
+                <div class="card-info">
+                  <h3>Card with Dismiss</h3>
+                  <p>More info about the card</p>
+                </div>
+                <button class="btn btn-solid-primary primary btn-card">
+                  CTA
+                </button>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="card-ovlay">
+                <img
+                  class="card-img img-ovlay"
+                  src="https://images.unsplash.com/photo-1598030304671-5aa1d6f21128?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                  alt=""
+                />
+                <h3 class="txt-ovlay">Card with text Overlay</h3>
+                <p class="txt-ovlay">More Info of Card</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="card-info">
+                  <h3>Text only Card</h3>
+                  <small>Small text info</small>
+                  <p class="card-info-para">More information about the card.</p>
+                  <button class="btn btn-solid-primary primary btn-card">
+                    Show More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="code-snippet-display">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522component-display-container%2520display-flex-column%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card%2522%253E%250A%2509%253Cimg%250A%2520%2520class%253D%2522card-img%2522%250A%2520%2520src%253D%2522https%253A%252F%252Fimages.unsplash.com%252Fphoto-1438761681033-6461ffad8d80%253Fixlib%253Drb-1.2.1%2526ixid%253DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%2526auto%253Dformat%2526fit%253Dcrop%2526w%253D870%2526q%253D80%2522%250A%2520%2520alt%253D%2522%2522%250A%2509%252F%253E%250A%2509%253Cdiv%2520class%253D%2522bgde-lg%2520pink%2522%253E%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card-info%2522%253E%250A%2520%2520%2509%253Ch3%253EVerticle%2520card%2520with%2520Badge%253C%252Fh3%253E%250A%2520%2509%2520%253Ch4%253EMore%2520detail%2520about%2520Card%253C%252Fh4%253E%250A%2520%2520%2509%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%253Cp%253EPrice%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-icn-secondary%2520secondary%2520btn-card%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520Move%2520to%2520Wishlist%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-solid-primary%2520primary%2520btn-card%2522%253E%250A%2520%2520Shop%2520Now%250A%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                style="
+                  width: 914px;
+                  height: 718px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </div>
+        <hr />
+
+        <div id="Image" class="sections">
+          <h1>Images</h1>
+          <p>Responsive and Round Images</p>
+          <div class="component-display-container display-flex-column">
+            <div class="showcomp">
+              <div class="row">
+                <div>
+                  <img
+                    class="img-res"
+                    src="https://images.unsplash.com/photo-1567267020524-07219c353d4a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=912&q=80"
+                    alt="landscape"
+                  />
+                </div>
+
+                <div>
+                  <img
+                    class="img-cir"
+                    src="https://images.unsplash.com/photo-1567267020524-07219c353d4a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=912&q=80"
+                    alt="landscape"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="code-snippet-display">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522component-display-container%2520display-flex-column%2522%253E%250A%253Cdiv%2520class%253D%2522showcomp%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522row%2522%253E%250A%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-res%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fimages.unsplash.com%252Fphoto-1567267020524-07219c353d4a%253Fixlib%253Drb-1.2.1%2526ixid%253DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%2526auto%253Dformat%2526fit%253Dcrop%2526w%253D912%2526q%253D80%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522landscape%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-cir%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fimages.unsplash.com%252Fphoto-1567267020524-07219c353d4a%253Fixlib%253Drb-1.2.1%2526ixid%253DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%2526auto%253Dformat%2526fit%253Dcrop%2526w%253D912%2526q%253D80%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522landscape%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                style="
+                  width: 914px;
+                  height: 675px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </div>
+
+        <hr />
+
+        <div id="Input" class="sections">
+          <h1>Input</h1>
+          <p>
+            Takes user's text based input and validate the data, shows errors
+            and warnings visually.
+          </p>
+          <div class="showcomp">
+            <div class="component-display-container display-flex-column">
+              <div class="row">
+                <div>
+                  <div class="input">
+                    <input type="text" class="input-txt" required />
+                    <span class="flt-label"
+                      ><i class="fas fa-user"></i> Input text
+                    </span>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="input">
+                    <input type="text" class="input-txt-error" required />
+                    <span class="flt-label-error"
+                      ><i class="fas fa-exclamation-circle"></i> Text with error
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div>
+                  <div class="input">
+                    <input type="text" class="input-txt-warning" required />
+                    <span class="flt-label-warning"
+                      ><i class="fas fa-exclamation-triangle"></i> Text with
+                      warning
+                    </span>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="input">
+                    <textarea
+                      class="input-txtarea"
+                      cols="20"
+                      rows="10"
+                      required
+                    ></textarea>
+                    <span class="flt-label"> Textarea </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="code-snippet-display">
+            <code>
+                <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522component-display-container%2520display-flex-column%2522%253E%250A%253Cdiv%2520class%253D%2522row%2522%253E%250A%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522input-txt%2522%2520required%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522flt-label%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%253Ci%2520class%253D%2522fas%2520fa-user%2522%253E%253C%252Fi%253E%2520Input%2520text%250A%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522input-txt-error%2522%2520required%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522flt-label-error%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2522%253E%253C%252Fi%253E%2520Text%2520with%2520error%250A%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522row%2522%253E%250A%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522input-txt-warning%2522%2520required%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522flt-label-warning%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%2520Text%2520with%250A%2520%2520%2520%2520%2520%2520%2520%2520warning%250A%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ctextarea%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522input-txtarea%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520cols%253D%252220%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520rows%253D%252210%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520required%250A%2520%2520%2520%2520%2520%2520%253E%253C%252Ftextarea%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522flt-label%2522%253E%2520Textarea%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                style="width: 718px; height: 1143px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </code>
+          </div>
+        </div>
+
+        <hr />
+      </section>
+    </div>
+    <script src="./Documentation/docs-nav.js"></script>
+    <script src="./Documentation/docs-sidebar.js"></script>
+  </body>
+</html>
