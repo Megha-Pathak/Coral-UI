@@ -1,0 +1,14 @@
+/* Images */
+.img-res {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  
+  .img-cir {
+    width: 100%;
+    max-width: 270px;
+    height: auto;
+    border-radius: 50%;
+  }
+  
