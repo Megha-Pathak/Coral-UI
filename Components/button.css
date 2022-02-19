@@ -11,6 +11,7 @@
     outline: none;
     cursor: pointer;
 }
+
 .btn:focus{
     box-shadow: 0 0 0 2px black;
 }
@@ -22,9 +23,11 @@
     cursor: pointer;
     padding: 0;
 }
+
 button.link-no-style{
     font-size: 1rem;
 }
+
 .link-text{
     text-decoration: none;
     color: inherit;
@@ -110,6 +113,7 @@ button.link-no-style{
     text-underline-position: under;
     color: var(--secondary-text-color);
 }
+
 .link-text-secondary:hover{
     color: var(--dark-secondary-text-color);
     text-decoration-thickness: 2px;
@@ -118,10 +122,10 @@ button.link-no-style{
 .btn-icon-secondary .btn-icon{
     color: var(--secondary-text-color);
 }
+
 .btn-icon-secondary:hover .btn-icon{
     color: var(--dark-secondary-text-color);
 }
-
 
 .btn-text-icon-secondary{
     color: var(--secondary-text-color);
@@ -135,7 +139,6 @@ button.link-no-style{
     color: var(--dark-secondary-text-color);
 }
 
-
 .btn-disabled{
     pointer-events: none;
     opacity: 0.7;
@@ -146,11 +149,11 @@ button.link-no-style{
     padding: 0.7rem 1.5rem;
     min-width: 80px;
 }
+
 .btn-sm-size{
     font-size: 0.9rem;
     padding: 0.3rem 0.7rem;
 }
-
 
 .btn-float-action{
     box-sizing: border-box;
@@ -169,39 +172,3 @@ button.link-no-style{
     bottom: 1rem;
     right: 1rem;
 }
-
-
-  
-.btn-toggle{
-    position: relative;
-    height: 26px;
-    width: 44px;
-    display: block;
-    cursor: pointer;
-}
-.btn-toggle:focus-within{
-    box-shadow: 0 0 0 2px black;
-}
-
-.btn-checkbox{
-    height: 0;
-    width: 0;
-    margin: 0;
-    opacity: 0;
-}
-
-
-
-.btn-toggle .btn-checkbox:checked + .btn-slider-round::before{
-    transform: translateX(-18px);
-}
-.btn-toggle .btn-checkbox:checked + .btn-slider-round{
-    background-color: #66263f;
-}
-
-
-
-
-
-
-
