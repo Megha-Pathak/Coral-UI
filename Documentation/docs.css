@@ -4,7 +4,6 @@
 @import './docsite-nav.css'; 
 @import './docs-components.css'; 
 @import './code-snippets.css'; 
-@import './../Components/util.css'; 
 @import './../Components/coral-ui.css'; 
 html {
 	scroll-behavior: smooth;
