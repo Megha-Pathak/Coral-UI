@@ -1,0 +1,154 @@
+.card {
+    margin: 1rem 2rem;
+    max-width: 300px;
+    position: relative;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    box-shadow: var(--secondary-box-shadow);
+  }
+  
+  .bdge-sm {
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 0.2rem 0;
+    top: 2rem;
+    width: 100px;
+    padding: 0.3rem;
+    clip-path: polygon(0% 0%, 71% 0%, 53% 50%, 69% 97%, 0 97%);
+  }
+  
+  .bgde-lg:after {
+    content: "<Badge>";
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(45deg);
+    width: 120px;
+    background-color: var(--dk-pink);
+    color: var(--lt-pink);
+    display: block;
+    position: absolute;
+    top: 1.6rem;
+    right: -1.5rem;
+    clip-path: polygon(
+      120px 20px,
+      90px -10px,
+      30px -10px,
+      0px 20px,
+      10px 30px,
+      110px 30px
+    );
+  }
+  
+  .badge-close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    border: none;
+    box-shadow: none;
+  }
+  
+  .card-img {
+    border-radius: 0.4rem 0.4rem 0 0;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .card-info {
+    padding: 1rem;
+  }
+  
+  .card-info-para {
+    padding: 1rem 0;
+  }
+  
+  .card-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-horizontal-cart {
+    border-radius: 0.4rem;
+    padding: 1rem;
+    background-color: #fff;
+    max-width: 550px;
+    box-shadow: var(--secondary-box-shadow);
+  }
+  
+  .atn-btns {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .card-horizontal-cart .btn-card {
+    width: 45%;
+    box-shadow: none;
+  }
+  
+  .card-details-horizontal {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card > .btn-card {
+    width: 100%;
+    border-radius: 0.4rem;
+  }
+  
+  .card-horizontal {
+    display: flex;
+    max-width: 500px;
+    gap: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.4rem;
+  }
+  
+  .card-horizontal-img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 0.4rem;
+  }
+  
+  .card-quant {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    align-items: baseline;
+  }
+  
+  .card-quant > button {
+    position: initial;
+  }
+  
+  .card-ovlay {
+    position: relative;
+    border-radius: 0.4rem;
+  }
+  
+  .card-ovlay > .img-ovlay {
+    opacity: 0.7;
+    border-radius: 0.4rem;
+  }
+  
+  .txt-ovlay {
+    position: absolute;
+  }
+  
+  .card-ovlay > h3 {
+    top: 2rem;
+    left: 1rem;
+  }
+  
+  .card-ovlay > p {
+    left: 1rem;
+    bottom: 2rem;
+  }
+  
