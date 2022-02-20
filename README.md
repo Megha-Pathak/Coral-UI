@@ -42,3 +42,5 @@ Coral Ui is powered with the following components. These components are always b
 </ul>
 
 ---
+
+Keep an eye on the progress of this project by visiting it's [project board](https://github.com/Megha-Pathak/coral-ui/projects/1). 
