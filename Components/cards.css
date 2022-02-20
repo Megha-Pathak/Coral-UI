@@ -128,26 +128,26 @@
     position: initial;
   }
   
-  .card-ovlay {
+  .card-overlay {
     position: relative;
     border-radius: 0.4rem;
   }
   
-  .card-ovlay > .img-ovlay {
+  .card-overlay > .img-overlay {
     opacity: 0.7;
     border-radius: 0.4rem;
   }
   
-  .txt-ovlay {
+  .txt-overlay {
     position: absolute;
   }
   
-  .card-ovlay > h3 {
+  .card-overlay > h3 {
     top: 2rem;
     left: 1rem;
   }
   
-  .card-ovlay > p {
+  .card-overlay > p {
     left: 1rem;
     bottom: 2rem;
   }
