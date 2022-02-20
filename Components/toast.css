@@ -1,0 +1,45 @@
+.toast {
+    padding: 1rem;
+    max-width: fit-content;
+    border-radius: 0.6rem;
+    box-shadow: var(--primary-box-shadow);
+  }
+  
+  .tl-error {
+    background-color: var(--lt-pink);
+    color: var(--dk-pink);
+  }
+  
+  .tl-warning {
+    background-color: var(--lt-yellow);
+    color: var(--dk-yellow);
+  }
+  
+  .tl-info {
+    background-color: var(--lt-blue);
+    color: var(--dk-blue);
+  }
+  
+  .tl-success {
+    background-color: var(--lt-green);
+    color: var(--dk-green);
+  }
+  
+  .tl-content-error {
+    border-left: 3px solid var(--dk-pink);
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 1rem;
+    align-items: center;
+  }
+  
+  .toast-lg {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+    max-width: 500px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--primary-box-shadow);
+  }
+  
