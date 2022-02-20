@@ -1,0 +1,21 @@
+.star-ratings {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .checked {
+    color: var(--dk-yellow);
+  }
+  
+  .badge-ratings {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    max-width: max-content;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+  }
+  
