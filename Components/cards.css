@@ -2,7 +2,7 @@
     margin: 1rem 2rem;
     max-width: 300px;
     position: relative;
-    background-color: #fff;
+    background-color: var(--white-color);
     padding: 1rem;
     border-radius: 0.4rem;
     box-shadow: var(--secondary-box-shadow);
@@ -75,7 +75,7 @@
   .card-horizontal-cart {
     border-radius: 0.4rem;
     padding: 1rem;
-    background-color: #fff;
+    background-color: var(--white-color);
     max-width: 550px;
     box-shadow: var(--secondary-box-shadow);
   }
@@ -106,7 +106,7 @@
     display: flex;
     max-width: 500px;
     gap: 1rem;
-    background-color: #fff;
+    background-color: var(--white-color);
     padding: 1rem;
     border-radius: 0.4rem;
   }
@@ -151,4 +151,13 @@
     left: 1rem;
     bottom: 2rem;
   }
+  
+
+  @media (max-width: 991px) {
+    .card-horizontal{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
   

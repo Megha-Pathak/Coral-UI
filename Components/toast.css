@@ -1,7 +1,7 @@
 .toast {
     padding: 1rem;
     max-width: fit-content;
-    border-radius: 0.6rem;
+    border-radius: 0.4rem;
     box-shadow: var(--primary-box-shadow);
   }
   
@@ -39,7 +39,7 @@
     align-items: baseline;
     max-width: 500px;
     padding: 1rem;
-    border-radius: 0.5rem;
+    border-radius: 0.4rem;
     box-shadow: var(--primary-box-shadow);
   }
   
