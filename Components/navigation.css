@@ -4,10 +4,10 @@
     min-height: 10vh;
     width: 100%;
     align-items: center;
-    background-color: #fcfcfc;   
+    background-color: var(--grey-color); 
     
     font-weight: 500;
-    color: #282c3f;
+    color: var(--dark-primary-color);
     
     padding: 1rem;
     box-sizing: border-box;
@@ -59,7 +59,7 @@
     margin-top: 4px;
 }
 .nav-icon-link .nav-icon{
-    color: #696b79;
+    color: var(--dark-primary-color);
     width: 1.2rem;
     height: 1.2rem;
     font-size: 1.2rem;
@@ -97,21 +97,21 @@
 .burger .line1{
     height: 0.125rem;
     width: 1.5rem;
-    background-color: #424553;
+    background-color: var(--grey-color);
     margin: 0.313rem 0;
 
 }
 .burger .line2{
     height: 0.125rem;
     width: 1.5rem;
-    background-color: #424553;
+    background-color: var(--grey-color);
     margin: 0.313rem 0;
 
 }
 .burger .line3{
     height: 0.125rem;
     width: 1.5rem;
-    background-color: #424553;
+    background-color: var(--grey-color);
     margin: 0.313rem 0;
 }
 .nav-logo-title{

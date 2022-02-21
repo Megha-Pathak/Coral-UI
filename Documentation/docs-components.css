@@ -32,6 +32,6 @@
 }
 
 .component-display-container .rating-badge{
-    background-color: #F1F1F1;
+    background-color: var(--white-color);
 }
 
