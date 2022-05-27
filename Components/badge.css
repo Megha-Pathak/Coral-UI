@@ -1,35 +1,120 @@
-.badge-av {
-    position: relative;
-  }
-  
-  .badge-icon {
-    position: relative;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    padding: 0.85rem;
-  }
-  
-  .bdg-bttm {
-    position: absolute;
-    bottom: 0.1rem;
-    right: 0.1rem;
-  }
-  
-  .bdg-top {
-    position: absolute;
-    top: -0.3rem;
-    display: flex;
-    right: -0.2rem;
-    align-items: center;
-    justify-content: center;
-    font-size: medium;
-  }
-  
-  .badge {
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    border: 2px solid var(--white-color);
-  }
-  
+.badge {
+  display: inline-block;
+  position: relative;
+  color: var(--color-primary-dark); 
+  padding: 0.75rem;
+}
+
+.badge-content {
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  z-index: 1;
+}
+
+.badge-small {
+  padding: 2px 7px;
+}
+
+.badge-large {
+  padding: 2px 8px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.badge-left {
+  left: -8px;
+  top: -5px;
+}
+
+.badge-right {
+  right: -8px;
+  top: -5px;
+}
+
+.badge-large.badge-left {
+  left: -1rem;
+  top: -8px;
+}
+
+.badge-large.badge-right {
+  right: -1rem;
+  top: -8px;
+}
+
+.badge-button {
+  border: none;
+  font-family: inherit;
+  border-radius: 5px;
+  background-color: var(--color-background-darker);
+  font-size: inherit;
+  color: inherit;
+  box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f;
+}
+
+.badge-blue,
+.status-blue {
+  background-color: var(--color-blue);
+}
+
+.badge-primary,
+.status-primary {
+  background-color: var(--color-primary);
+}
+
+.badge-gray,
+.status-offline {
+  background-color: var(--accents-4);
+}
+
+.badge-error,
+.status-dnd {
+  background-color: var(--color-error);
+}
+
+.badge-success,
+.status-online {
+  background-color: var(--color-success);
+}
+
+.badge-warning,
+.status-idle {
+  background-color: var(--color-warning);
+}
+
+.badge-icon > .badge-content {
+  top: 0;
+  right: 0;
+}
+
+.badge-avatar {
+  padding: 0;
+}
+
+.status-lg {
+  height: 1.5rem;
+  border: 2.5px solid var(--color-foreground);
+}
+
+.status-md {
+  height: 1.25rem;
+  border: 2.5px solid var(--color-foreground);
+}
+
+.status-sm {
+  height: 1rem;
+  border: 2.5px solid var(--color-foreground);
+}
+
+.status-xs {
+  height: 0.75rem;
+  border: 2px solid var(--color-foreground);
+}
+
+.badge-avatar .badge-content {
+  right: 4%;
+  bottom: 12.5%;
+}

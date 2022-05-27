@@ -1,15 +1,131 @@
-@import url("./button.css");
-@import url("./badge.css");
-@import url("./avatar.css");
-@import url("./alerts.css");
-@import url("./image.css");
-@import url("./cards.css");
-@import url("./navigation.css");
-@import url("./input.css");
-@import url("./util.css");
-@import url("./typography.css");
-@import url("./lists.css");
-@import url("./modal.css");
-@import url("./rating.css");
-@import url("./toast.css");
-@import url("./grid.css");
+/* Icons */
+@import url(https://fonts.googleapis.com/css2?family=Material+Icons);
+/* Icons */
+
+@import url(alerts.css);
+@import url(avatar.css);
+@import url(badge.css);
+@import url(button.css);
+@import url(card.css);
+@import url(button.css);
+@import url(image.css);
+@import url(input.css);
+@import url(typography.css);
+@import url(lists.css);
+@import url(rating.css);
+@import url(snackbar.css);
+@import url(grid.css);
+@import url(modal.css);
+@import url(slider.css);
+@import url(navigation.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+
+:root {
+  --color-background-darker: #001B50;
+  --color-background-dark: #002568;
+  --color-background: #001B50;
+
+  --color-foreground: #e5eaf0;
+  --accents-1: #ced3d8;
+  --accents-2: #acb0b4;
+  --accents-3: #898c90;
+  --accents-4: #707376;
+
+  --showcase-color: #fec9f1;
+
+/* Status Colors */
+  --color-error-lighter: #ff758f;
+  --color-error-light: #c9184a;
+  --color-error: #800f2f;
+  --color-error-dark: #590d22;
+  --color-success-lighter: #c7f9cc;
+  --color-success-light: #80ed99;
+  --color-success: #047857;
+  --color-success-dark: #38a3a5;
+  --color-warning-lighter: #ffe169;
+  --color-warning-light: #fad643;
+  --color-warning: #fad643;
+  --color-warning-dark: #b69121;
+  --color-blue-lighter: #caf0f8;
+  --color-blue-light: #90e0ef;
+  --color-blue: #00b4d8;
+  --color-blue-dark: #023e8a;
+  --color-primary-lighter: #fec9f1;
+  --color-primary-light: #efabff;
+  --color-primary: #eda2f2;
+  --color-primary-dark: #dc6bad;
+  --letter-spacing: 0.5px;
+}
+
+
+/* Headings */
+.hl {
+  display: inline-block;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding: 0.2rem 0.4rem;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.hl-error {
+  background-color: var(--color-error);
+}
+
+.hl-success {
+  background-color: var(--color-success);
+}
+
+.hl-warning {
+  background-color: var(--color-warning);
+}
+
+.hl-blue {
+  background-color: var(--color-blue);
+}
+
+.hl-primary {
+  background-color: var(--color-primary);
+}
+
+.hl-primary-light {
+  background-color: var(--color-primary-light);
+}
+
+.hl-code {
+  display: inline-block;
+  margin: 2px 0;
+  background-color: var(--color-background-darker);
+  font-family: monospace;
+  color: var(--color-primary-dark);
+  border-radius: 5px;
+  padding: 0.25rem 0.5rem;
+}
+
+/* Accent Variants */
+
+.color-success {
+  color: var(--color-success);
+}
+
+.color-success-light {
+  color: var(--color-success-light);
+}
+
+.color-accents-1 {
+  color: var(--accents-1);
+}
+
+.color-accents-2 {
+  color: var(--accents-2);
+}
+
+.color-accents-3 {
+  color: var(--accents-3);
+}
+
+.color-accents-4 {
+  color: var(--accents-4);
+}

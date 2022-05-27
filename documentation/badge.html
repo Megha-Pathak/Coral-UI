@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Badges | Coral UI</title>
+
+    <link rel="stylesheet" href="../../Components/reset.css" />
+    <link rel="stylesheet" href="../../Components/coral-ui.css" />
+    <link rel="stylesheet" href="../../Components/docs.css" />
+    <link rel="stylesheet" href="../../Components/util.css" />
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <section class="navbar-brand">
+          <a href="/index.html"> Coral UI </a>
+        </section>
+        <section class="navbar-menu">
+          <ul class="navbar-links">
+            <li class="navbar-link">
+              <a href="/docs.html"> Documentation</a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+    <div class="main badges">
+      <h1 class="text-center">Badges</h1>
+      <p>
+        Badges are being used to display the status information or the
+        notification count.
+      </p>
+      <!-- Text with a badge -->
+      <h2>Badge on text</h2>
+
+      <div class="showcase">
+        <span class="badge">
+          Notifications
+          <span class="badge-content badge-small badge-right badge-warning"
+            >4</span
+          >
+        </span>
+      </div>
+
+      <h2>Badge on a Button</h2>
+
+      <div class="showcase">
+        <button class="badge badge-button">
+          Chat
+          <span class="badge-content badge-small badge-left badge-error"
+            >8</span
+          >
+        </button>
+      </div>
+
+      <h2>Badge on a Avatar (showing online)</h2>
+
+      <div class="showcase">
+        <span class="badge badge-avatar">
+          <img
+            class="avatar-round avatar-lg"
+            src="https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+            alt="avatar"
+          />
+          <span class="badge-content status-lg status-online"></span>
+        </span>
+      </div>
+      <iframe
+        src="https://carbon.now.sh/embed?bg=rgba%28254%2C201%2C241%2C1%29&t=night-owl&wt=none&l=javascript&width=636&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=48px&ln=false&fl=1&fm=Hack&fs=10px&lh=156%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522showcase%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520Notifications%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-content%2520badge-small%2520badge-right%2520badge-warning%2522%250A%2520%2520%2520%2520%253E4%253C%252Fspan%250A%2520%2520%2520%2520%253E%250A%2520%2520%253C%252Fspan%253E%250A%2520%2520%253Cbutton%2520class%253D%2522badge%2520badge-button%2522%253E%250A%2520%2520%2520%2520Chat%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-content%2520badge-small%2520badge-left%2520badge-error%2522%250A%2520%2520%2520%2520%253E8%253C%252Fspan%250A%2520%2520%2520%2520%253E%250A%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-avatar%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar-round%2520avatar-lg%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fimages.unsplash.com%252Fphoto-1597223557154-721c1cecc4b0%253Fixlib%253Drb-1.2.1%2526ixid%253DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%2526auto%253Dformat%2526fit%253Dcrop%2526w%253D880%2526q%253D80%2522%250A%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge-content%2520status-lg%2520status-online%2522%253E%253C%252Fspan%253E%250A%2520%2520%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+        style="
+          width: 636px;
+          height: 560px;
+          border: 0;
+          transform: scale(1);
+          overflow: hidden;
+        "
+        sandbox="allow-scripts allow-same-origin"
+      >
+      </iframe>
+    </div>
+  </body>
+</html>

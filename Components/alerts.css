@@ -1,33 +1,29 @@
 .alert {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    padding: 0.3rem;
-    max-width: fit-content;
-    border-radius: 0.4rem;
-  }
-  
-  .al-error {
-    background-color: var(--lt-pink);
-    color: var(--dk-pink);
-    border: 2px solid var(--dk-pink);
-  }
-  
-  .al-warning {
-    background-color: var(--lt-yellow);
-    color: var(--dk-yellow);
-    border: 2px solid var(--dk-yellow);
-  }
-  
-  .al-info {
-    background-color: var(--lt-blue);
-    color: var(--dk-blue);
-    border: 2px solid var(--dk-blue);
-  }
-  
-  .al-success {
-    background-color: var(--lt-green);
-    color: var(--dk-green);
-    border: 2px solid var(--dk-green);
-  }
-  
+  max-width: 20rem;
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.alert-primary {
+  background-color: var(--color-primary-dark);
+}
+
+.alert-warning {
+  background-color: var(--color-warning-dark);
+}
+
+.alert-error {
+  background-color: var(--color-error);
+}
+
+.alert-success {
+  background-color: var(--color-success);
+}
+
+.alert-content {
+  font-weight: 500;
+}

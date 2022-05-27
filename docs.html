@@ -4,1159 +4,174 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coral UI | Docs</title>
-    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./Documentation/docs.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Recursive:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap"
-      rel="stylesheet"
-    />
+    <title>Alerts | Coral UI</title>
+    <link rel="stylesheet" href="Components/reset.css" />
+    <link rel="stylesheet" href="Components/coral-ui.css" />
+    <link rel="stylesheet" href="Components/docs.css" />
+    <link rel="stylesheet" href="Components/util.css" />
+    <link rel="stylesheet" href="Components/home.css" />
   </head>
   <body>
-    <div class="grid-container-pagelayout">
-      <nav class="nav-bar shadow-box" id="my-nav-bar">
-        <div class="nav-section">
-          <div class="nav-logo nav-section-items" id="my-logo">
-            <a class="link-no-style" href="/">
-              <div class="primary-text-color logo-title">
-                <span class="tertiary-text-color"> Coral UI </span>
-              </div>
-            </a>
-          </div>
-        </div>
+    <header class="header">
+      <nav class="navbar">
+        <section class="navbar-brand">
+          <a href="/index.html"> Coral UI </a>
+        </section>
+        <section class="navbar-menu">
+          <ul class="navbar-links">
+            <li class="navbar-link">
+              <a href="/docs.html"> Documentation</a>
+            </li>
+          </ul>
+        </section>
       </nav>
-      <div class="sidebar grid-item shadow-bottom" id="my-side-bar">
-        <div class="nav-bar-opening-button">
-          <h2 class="h5 nav-title">Components</h2>
-          <span class="sidebar-arrow"
-            ><i class="h5 fas fa-chevron-down"></i
-          ></span>
+    </header>
+
+    <div id="components" class="components">
+      <h1 class="text-center">Documentation</h1>
+      <div class="components-main">
+        <div class="component">
+          <a href="documentation/installation.html"
+            ><h2 class="component-heading">Installation</h2>
+            <p class="component-desc">
+              Get started with Coral UI by following these installation steps.
+            </p></a
+          >
         </div>
-        <ul class="nav-links">
-          <li class="nav-link-item"><a href="#Alerts">Alerts</a></li>
-          <li class="nav-link-item"><a href="#Avatar">Avatar</a></li>
-          <li class="nav-link-item"><a href="#Badge">Badge</a></li>
-          <li class="nav-link-item"><a href="#Button">Button</a></li>
-          <li class="nav-link-item"><a href="#Cards">Cards</a></li>
-          <li class="nav-link-item"><a href="#Image">Image</a></li>
-          <li class="nav-link-item"><a href="#Input">Input</a></li>
-          <li class="nav-link-item"><a href="#Typography"> Typography</a></li>
-          <li class="nav-link-item"><a href="#Lists"> Lists</a></li>
-          <li class="nav-link-item"><a href="#Navigation"> Navigation </a></li>
-          <li class="nav-link-item"><a href="#Modal"> Modal </a></li>
-          <li class="nav-link-item"><a href="#Rating"> Rating </a></li>
-          <li class="nav-link-item"><a href="#Toast"> Toast </a></li>
-          <li class="nav-link-item"><a href="#Grid"> Simplified Grid </a></li>
-        </ul>
-      </div>
-      <section class="main grid-item">
-        <div id="Alerts">
-          <div class="component-intro">
-            <h1>Alerts</h1>
-            <p>
+        <div class="component">
+          <a href="documentation/alert.html"
+            ><h2 class="component-heading">Alert</h2>
+            <p class="component-desc">
               Display text in a dialog box that pops up on the screen and
               conveys meaning through color with a handful of color utility
               classes.
-            </p>
-          </div>
-
-          <div class="component-display-container display-flex-column">
-            <h3 class="secondary-txt-showcase">Error alert</h3>
-            <div class="alert al-error">
-              <i class="fas fa-exclamation-circle"></i>
-              <p>This is an error alert!</p>
-              <i class="fas fa-times"></i>
-            </div>
-            <h3 class="secondary-txt-showcase">Warning alert</h3>
-            <div class="alert al-warning">
-              <i class="fas fa-exclamation-triangle"></i>
-              <p>This is an warning alert!</p>
-              <i class="fas fa-times"></i>
-            </div>
-            <h3 class="secondary-txt-showcase">Info alert</h3>
-            <div class="alert al-info">
-              <i class="fas fa-info-circle"></i>
-              <p>This is an info alert!</p>
-              <i class="fas fa-times"></i>
-            </div>
-            <h3 class="secondary-txt-showcase">Success alert</h3>
-            <div class="alert al-success">
-              <i class="fas fa-check-circle"></i>
-              <p>This is an success alert!</p>
-              <i class="fas fa-times"></i>
-            </div>
-          </div>
-          <div class="code-snippet-display">
-            <code>
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Ch3%2520class%253D%2522secondary-txt-showcase%2522%253EWarning%2520alert%253C%252Fh3%253E%250A%253Cdiv%2520class%253D%2522alert%2520al-warning%2522%253E%250A%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%250A%253Cp%253EThis%2520is%2520an%2520warning%2520alert%21%253C%252Fp%253E%250A%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E"
-                style="
-                  width: 592px;
-                  height: 299px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
-            </code>
-          </div>
+            </p></a
+          >
         </div>
-        <hr />
-        <div id="Avatar">
-          <div class="component-intro">
-            <h1>Avatar</h1>
-            <p>
+        <div class="component">
+          <a href="documentation/avatar.html"
+            ><h2 class="component-heading">Avatar</h2>
+            <p class="component-desc">
               Avatar is a pure CSS control used to add initials, icons, or
               images representing people or objects in different shapes and
               sizes.
-            </p>
-          </div>
-
-          <div class="component-display-container display-flex-column">
-            <h3 class="secondary-txt-showcase">Image avatars</h3>
-            <div class="showcase">
-              <img
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                class="avatar"
-                alt="Random Person Headshot"
-              />
-              <img
-                src="https://images.unsplash.com/photo-1614644147798-f8c0fc9da7f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80"
-                class="avatar"
-                alt="Random Person Headshot"
-              />
-            </div>
-            <h3 class="secondary-txt-showcase">Initials avatars</h3>
-            <div class="showcase">
-              <div class="avatar av-sm av-blue">MP</div>
-              <div class="avatar av-sm av-pink">HP</div>
-              <div class="avatar av-sm av-yellow">SS</div>
-            </div>
-            <h3 class="secondary-txt-showcase">Social Icon avatars</h3>
-            <div class="showcase">
-              <div class="avatar av-sm av-pink">
-                <i class="fab fa-twitter"></i>
-              </div>
-              <div class="avatar av-sm av-blue">
-                <i class="fab fa-instagram"></i>
-              </div>
-              <div class="avatar av-sm av-green">
-                <i class="fab fa-linkedin-in"></i>
-              </div>
-            </div>
-            <h3 class="secondary-txt-showcase">Size avatars</h3>
-            <div class="showcase">
-              <img
-                class="avatar av-sm"
-                src="https://images.unsplash.com/photo-1614644147798-f8c0fc9da7f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80"
-                alt=""
-              />
-              <img
-                class="avatar"
-                src="https://images.unsplash.com/photo-1614644147798-f8c0fc9da7f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80"
-                alt=""
-              />
-              <img
-                class="avatar av-lg"
-                src="https://images.unsplash.com/photo-1614644147798-f8c0fc9da7f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="code-snippet-display">
-            <code>
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Ch3%2520class%253D%2522secondary-txt-showcase%2522%253E%2520Initials%2520avatars%253C%252Fh3%253E%250A%253Cdiv%2520class%253D%2522showcase%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar%2520av-sm%2520av-blue%2522%253EMP%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar%2520av-sm%2520av-pink%2522%253E%2520HP%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar%2520av-sm%2520av-yellow%2522%253E%2520SS%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-                style="
-                  width: 642px;
-                  height: 314px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
-            </code>
-          </div>
+            </p></a
+          >
         </div>
-        <hr />
-        <div id="Badge">
-          <div class="component-intro">
-            <h1>Badge</h1>
-            <p>
+        <div class="component">
+          <a href="documentation/badge.html"
+            ><h2 class="component-heading">Badge</h2>
+            <p class="component-desc">
               Badges are indicators and convey additional information through
               utility classes.
-            </p>
-          </div>
-          <div class="component-display-container display-flex-column">
-            <h3 class="secondary-txt-showcase">Badge on Icon</h3>
-            <div class="showcase">
-              <div class="badge-av">
-                <div class="badge-icon green bdg-top">10</div>
-                <div class="avatar av-green">
-                  <i class="fas fa-lg fa-bell"></i>
-                </div>
-              </div>
-              <div class="badge-av">
-                <div class="badge-icon pink bdg-top">8+</div>
-                <div class="avatar av-pink">
-                  <i class="fas fa-lg fa-heart"></i>
-                </div>
-              </div>
-              <div class="badge-av">
-                <div class="badge-icon yellow bdg-top">20</div>
-                <div class="avatar av-yellow">
-                  <i class="fas fa-lg fa-shopping-cart"></i>
-                </div>
-              </div>
-            </div>
-
-            <h3 class="secondary-txt-showcase">Badge on Avatar</h3>
-            <div class="showcase">
-              <div class="badge-av">
-                <img
-                  class="avatar"
-                  src="https://images.unsplash.com/photo-1614644147798-f8c0fc9da7f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80"
-                  alt="Random Person"
-                />
-                <div class="badge green bdg-bttm"></div>
-              </div>
-              <div class="badge-av">
-                <img
-                  class="avatar"
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                  alt="Random Person"
-                />
-                <div class="badge yellow bdg-bttm"></div>
-              </div>
-              <div class="badge-av">
-                <img
-                  class="avatar"
-                  src="https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1188&q=80"
-                  alt="Random Person"
-                />
-                <div class="badge pink bdg-bttm"></div>
-              </div>
-            </div>
-          </div>
+            </p></a
+          >
         </div>
-        <div class="code-snippet-display">
-          <code>
-            <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Ch3%2520class%253D%2522secondary-txt-showcase%2522%253EBadge%2520on%2520Icons%253C%252Fh3%253E%250A%253Cdiv%2520class%253D%2522showcase%2522%253E%250A%253Cdiv%2520class%253D%2522badge-av%2522%253E%250A%253Cdiv%2520class%253D%2522badge-icon%2520green%2520bdg-top%2522%253E10%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520av-green%2522%253E%250A%253Ci%2520class%253D%2522fas%2520fa-lg%2520fa-bell%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-av%2522%253E%250A%253Cdiv%2520class%253D%2522badge-icon%2520pink%2520bdg-top%2522%253E8%252B%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520av-pink%2522%253E%250A%253Ci%2520class%253D%2522fas%2520fa-lg%2520fa-heart%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-av%2522%253E%250A%253Cdiv%2520class%253D%2522badge-icon%2520yellow%2520bdg-top%2522%253E20%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520av-yellow%2522%253E%250A%253Ci%2520class%253D%2522fas%2520fa-lg%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-              style="
-                width: 616px;
-                height: 633px;
-                border: 0;
-                transform: scale(1);
-                overflow: hidden;
-              "
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
-          </code>
-        </div>
-
-        <hr />
-
-        <div id="Button">
-          <div class="component-intro">
-            <h1>Buttons</h1>
-            <p>
+        <div class="component">
+          <a href="documentation/button.html"
+            ><h2 class="component-heading">Button</h2>
+            <p class="component-desc">
               Buttons (sometimes also considered as call to action) helps user
               to take further actions.
-            </p>
-          </div>
-
-          <div class="component-display-container">
-            <a href="#" class="btn flex-items btn-solid-primary">Solid</a>
-            <a class="btn flex-items btn-outline-primary">Outline</a>
-            <a class="link-text flex-items link-text-primary">Text</a>
-            <a class="btn flex-items btn-icon-primary"
-              ><span class="btn-icon"
-                ><i class="fas fa-shopping-cart"></i
-              ></span>
-            </a>
-            <a class="btn flex-items btn-text-icon-secondary btn-disabled"
-              ><span class="btn-icon"><i class="fas fa-minus"></i></span>
-              Disabled
-            </a>
-            <a class="btn flex-items btn-text-icon-primary"
-              ><span class="btn-icon"
-                ><i class="fas fa-shopping-cart"></i
-              ></span>
-              Text with Icon</a
-            >
-
-            <a class="btn btn-float-action"><i class="fas fa-plus"></i></a>
-          </div>
-
-          <div class="code-snippet-display">
-            <code>
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522component-display-container%2522%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520flex-items%2520btn-solid-primary%2522%253ESolid%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520flex-items%2520btn-outline-primary%2522%253EOutline%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522link-text%2520flex-items%2520link-text-primary%2522%253EText%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520flex-items%2520btn-icon-primary%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520flex-items%2520btn-text-icon-secondary%2520btn-disabled%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522fas%2520fa-minus%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520Disabled%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520flex-items%2520btn-text-icon-primary%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520Text%2520with%2520Icon%253C%252Fa%253E%250A%253C%252Fdiv%253E"
-                style="
-                  width: 928px;
-                  height: 427px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
-            </code>
-          </div>
+            </p></a
+          >
         </div>
-
-        <hr />
-
-        <div id="Cards">
-          <div class="component-intro">
-            <h1>Cards</h1>
-            <p>
+        <div class="component">
+          <a href="documentation/card.html"
+            ><h2 class="component-heading">Card</h2>
+            <p class="component-desc">
               Card a container-based user interface (UI) control built for
               displaying organized content.
-            </p>
-
-          </div>
-
-          <div class="component-display-container display-flex-column">
-            <div class="card">
-              <img
-                class="card-img"
-                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                alt=""
-              />
-              <div class="bgde-lg pink"></div>
-              <div class="card-info">
-                <h3>Verticle card with Badge</h3>
-                <h4>More detail about Card</h4>
-                <div class="card-details">
-                  <p>Price</p>
-                  <button class="btn btn-icn-secondary secondary btn-card">
-                    <i class="fas fa-heart"></i>
-                    Move to Wishlist
-                  </button>
-                </div>
-              </div>
-              <button class="btn btn-solid-primary primary btn-card">
-                Shop Now
-              </button>
-            </div>
-
-            <div class="card-horizontal-cart">
-              <div class="card-horizontal">
-                <img
-                  class="card-horizontal-img"
-                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                  alt="random person"
-                />
-                <div class="card-info">
-                  <h3>Horizontal Card</h3>
-                  <small>More info about the card</small>
-                  <div class="card-details-horizontal">
-                    <div class="card-quant">
-                      <button class="floating-act badge-close flt-tri">
-                        <i class="fas fa-plus"></i>
-                      </button>
-                      <p>2</p>
-                      <button class="floating-act badge-close flt-tri">
-                        <i class="fas fa-minus"></i>
-                      </button>
-                    </div>
-                    <p>Price</p>
-                  </div>
-                </div>
-              </div>
-              <div class="atn-btns">
-                <button class="btn btn-solid-primary primary btn-card">
-                  <i class="fas fa-shopping-cart"></i>
-                  Checkout
-                </button>
-                <button class="btn btn-icon-secondary secondary btn-card">
-                  <i class="fas fa-heart"></i>
-                  Move to Wishlist
-                </button>
-              </div>
-            </div>
-
-            <div class="column">
-              <div class="card">
-                <img
-                  class="card-img"
-                  src="https://images.unsplash.com/photo-1598030304671-5aa1d6f21128?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-                  alt="vegetables photos"
-                />
-                <button class="floating-act badge-close">
-                  <i class="fas fa-lg fa-times"></i>
-                </button>
-                <div class="card-info">
-                  <h3>Card with Dismiss</h3>
-                  <p>More info about the card</p>
-                </div>
-                <button class="btn btn-solid-primary primary btn-card">
-                  CTA
-                </button>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="card-overlay">
-                <img
-                  class="card-img img-overlay"
-                  src="https://images.unsplash.com/photo-1598030304671-5aa1d6f21128?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-                  alt=""
-                />
-                <h3 class="txt-overlay">Card with text Overlay</h3>
-                <p class="txt-overlay">More Info of Card</p>
-              </div>
-            </div>
-            <div class="column">
-              <div class="card">
-                <div class="card-info">
-                  <h3>Text only Card</h3>
-                  <small>Small text info</small>
-                  <p class="card-info-para">More information about the card.</p>
-                  <button class="btn btn-solid-primary primary btn-card">
-                    Show More
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="code-snippet-display">
-            <code>
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522component-display-container%2520display-flex-column%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card%2522%253E%250A%2509%253Cimg%250A%2520%2520class%253D%2522card-img%2522%250A%2520%2520src%253D%2522https%253A%252F%252Fimages.unsplash.com%252Fphoto-1438761681033-6461ffad8d80%253Fixlib%253Drb-1.2.1%2526ixid%253DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%2526auto%253Dformat%2526fit%253Dcrop%2526w%253D870%2526q%253D80%2522%250A%2520%2520alt%253D%2522%2522%250A%2509%252F%253E%250A%2509%253Cdiv%2520class%253D%2522bgde-lg%2520pink%2522%253E%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card-info%2522%253E%250A%2520%2520%2509%253Ch3%253EVerticle%2520card%2520with%2520Badge%253C%252Fh3%253E%250A%2520%2509%2520%253Ch4%253EMore%2520detail%2520about%2520Card%253C%252Fh4%253E%250A%2520%2520%2509%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%253Cp%253EPrice%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-icn-secondary%2520secondary%2520btn-card%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520Move%2520to%2520Wishlist%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-solid-primary%2520primary%2520btn-card%2522%253E%250A%2520%2520Shop%2520Now%250A%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-                style="
-                  width: 914px;
-                  height: 718px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
-            </code>
-          </div>
+            </p></a
+          >
         </div>
-        <hr />
-
-        <div id="Image">
-          <div class="component-intro">
-            <h1>Images</h1>
-            <p>Responsive and Round Images</p>
-          </div>
-
-          <div class="component-display-container display-flex-column">
-            <div class="showcomp">
-              <div class="row">
-                <div>
-                  <img
-                    class="img-res"
-                    src="https://images.unsplash.com/photo-1567267020524-07219c353d4a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=912&q=80"
-                    alt="landscape"
-                  />
-                </div>
-
-                <div>
-                  <img
-                    class="img-cir"
-                    src="https://images.unsplash.com/photo-1567267020524-07219c353d4a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=912&q=80"
-                    alt="landscape"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="code-snippet-display">
-            <code>
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522component-display-container%2520display-flex-column%2522%253E%250A%253Cdiv%2520class%253D%2522showcomp%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522row%2522%253E%250A%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-res%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fimages.unsplash.com%252Fphoto-1567267020524-07219c353d4a%253Fixlib%253Drb-1.2.1%2526ixid%253DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%2526auto%253Dformat%2526fit%253Dcrop%2526w%253D912%2526q%253D80%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522landscape%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-cir%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fimages.unsplash.com%252Fphoto-1567267020524-07219c353d4a%253Fixlib%253Drb-1.2.1%2526ixid%253DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%2526auto%253Dformat%2526fit%253Dcrop%2526w%253D912%2526q%253D80%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522landscape%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-                style="
-                  width: 914px;
-                  height: 675px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
-            </code>
-          </div>
+        <div class="component">
+          <a href="documentation/grid.html"
+            ><h2 class="component-heading">Grid</h2>
+            <p class="component-desc">
+              Grid is used when we want sections in views.
+            </p></a
+          >
         </div>
-
-        <hr />
-
-        <div id="Input">
-          <div class="component-intro">
-            <p>
+        <div class="component">
+          <a href="documentation/image.html"
+            ><h2 class="component-heading">Image</h2>
+            <p class="component-desc">
+              Responsive and Round Images that work on devices of different
+              size.
+            </p></a
+          >
+        </div>
+        <div class="component">
+          <a href="documentation/input.html"
+            ><h2 class="component-heading">Input</h2>
+            <p class="component-desc">
               Takes user's text based input and validate the data, shows errors
               and warnings visually.
-            </p>
-          </div>
-          <h1>Input</h1>
-
-          <div class="showcomp">
-            <div class="component-display-container display-flex-column">
-              <div class="row">
-                <div>
-                  <div class="input">
-                    <input type="text" class="input-txt" required />
-                    <span class="flt-label"
-                      ><i class="fas fa-user"></i> Input text
-                    </span>
-                  </div>
-                </div>
-
-                <div>
-                  <div class="input">
-                    <input type="text" class="input-txt-error" required />
-                    <span class="flt-label-error"
-                      ><i class="fas fa-exclamation-circle"></i> Text with error
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div>
-                  <div class="input">
-                    <input type="text" class="input-txt-warning" required />
-                    <span class="flt-label-warning"
-                      ><i class="fas fa-exclamation-triangle"></i> Text with
-                      warning
-                    </span>
-                  </div>
-                </div>
-
-                <div>
-                  <div class="input">
-                    <textarea
-                      class="input-txtarea"
-                      cols="20"
-                      rows="10"
-                      required
-                    ></textarea>
-                    <span class="flt-label"> Textarea </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="code-snippet-display">
-            <code>
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522component-display-container%2520display-flex-column%2522%253E%250A%253Cdiv%2520class%253D%2522row%2522%253E%250A%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522input-txt%2522%2520required%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522flt-label%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%253Ci%2520class%253D%2522fas%2520fa-user%2522%253E%253C%252Fi%253E%2520Input%2520text%250A%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522input-txt-error%2522%2520required%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522flt-label-error%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2522%253E%253C%252Fi%253E%2520Text%2520with%2520error%250A%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522row%2522%253E%250A%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522input-txt-warning%2522%2520required%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522flt-label-warning%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%2520Text%2520with%250A%2520%2520%2520%2520%2520%2520%2520%2520warning%250A%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ctextarea%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522input-txtarea%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520cols%253D%252220%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520rows%253D%252210%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520required%250A%2520%2520%2520%2520%2520%2520%253E%253C%252Ftextarea%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522flt-label%2522%253E%2520Textarea%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-                style="
-                  width: 718px;
-                  height: 1143px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
-            </code>
-          </div>
+            </p></a
+          >
         </div>
-
-        <hr />
-
-        <div id="Typography">
-          <div class="component-intro">
-            <h1>Typography</h1>
-            <p>
-              Typography is the art and technique of arranging type to make
-              written language legible, readable and appealing when displayed.
-            </p>
-          </div>
-
-          <div class="component-display-container display-flex-column">
-            <h3>Headings</h3>
-            <h1>
-              h1 - Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Quibusdam, quidem.
-            </h1>
-            <h2>
-              h2 - Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Quibusdam, quidem.
-            </h2>
-            <h3>
-              h3 - Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Quibusdam, quidem.
-            </h3>
-            <h4>
-              h4 - Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Quibusdam, quidem.
-            </h4>
-            <h5>
-              h5 - Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Quibusdam, quidem.
-            </h5>
-            <h6>
-              h6 - Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Quibusdam, quidem.
-            </h6>
-            <p>
-              p - Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-              provident, obcaecati sapiente debitis laborum sit asperiores
-              adipisci nam id ad.
-            </p>
-            <small
-              >small - Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Harum, quibusdam?</small
-            >
-
-            <h3>Grey text</h3>
-            <p class="grey-txt">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-              provident, obcaecati sapiente debitis laborum sit asperiores
-              adipisci nam id ad.
-            </p>
-            <h3>Center text</h3>
-            <p class="center-txt">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-              provident, obcaecati sapiente debitis laborum sit asperiores
-              adipisci nam id ad.
-            </p>
-          </div>
-          <div class="code-snippet-display">
-            <code>
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522component-display-container%2520display-flex-column%2522%253E%250A%2520%2520%253Ch3%253E%2520Headings%253C%252Fh3%253E%250A%253Ch1%253E%250A%2520%2520h1%2520-%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%252C%2520adipisicing%2520elit.%250A%2520%2520Quibusdam%252C%2520quidem.%250A%253C%252Fh1%253E%250A%253Ch2%253E%250A%2520%2520h2%2520-%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%252C%2520adipisicing%2520elit.%250A%2520%2520Quibusdam%252C%2520quidem.%250A%253C%252Fh2%253E%250A%253Ch3%253E%250A%2520%2520h3%2520-%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%252C%2520adipisicing%2520elit.%250A%2520%2520Quibusdam%252C%2520quidem.%250A%253C%252Fh3%253E%250A%253Ch4%253E%250A%2520%2520h4%2520-%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%252C%2520adipisicing%2520elit.%250A%2520%2520Quibusdam%252C%2520quidem.%250A%253C%252Fh4%253E%250A%253Ch5%253E%250A%2520%2520h5%2520-%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%252C%2520adipisicing%2520elit.%250A%2520%2520Quibusdam%252C%2520quidem.%250A%253C%252Fh5%253E%250A%253Ch6%253E%250A%2520%2520h6%2520-%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%252C%2520adipisicing%2520elit.%250A%2520%2520Quibusdam%252C%2520quidem.%250A%253C%252Fh6%253E%250A%253Cp%253E%250A%2520%2520p%2520-%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Eaque%250A%2520%2520provident%252C%2520obcaecati%2520sapiente%2520debitis%2520laborum%2520sit%2520asperiores%2520adipisci%250A%2520%2520nam%2520id%2520ad.%250A%253C%252Fp%253E%250A%253Csmall%250A%2520%2520%253Esmall%2520-%2520Lorem%2520ipsum%252C%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%250A%2520%2520Harum%252C%2520quibusdam%253F%253C%252Fsmall%250A%253E%250A%250A%253Ch3%253EGrey%2520text%253C%252Fh3%253E%250A%253Cp%2520class%253D%2522grey-txt%2522%253E%250A%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Eaque%250A%2520%2520provident%252C%2520obcaecati%2520sapiente%2520debitis%2520laborum%2520sit%2520asperiores%2520adipisci%250A%2520%2520nam%2520id%2520ad.%250A%253C%252Fp%253E%250A%253Ch3%253ECenter%2520text%253C%252Fh3%253E%250A%253Cp%2520class%253D%2522center-txt%2522%253E%250A%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Eaque%250A%2520%2520provident%252C%2520obcaecati%2520sapiente%2520debitis%2520laborum%2520sit%2520asperiores%2520adipisci%250A%2520%2520nam%2520id%2520ad.%250A%253C%252Fp%253E%250A%253C%252Fdiv%253E"
-                style="
-                  width: 747px;
-                  height: 1213px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
-            </code>
-          </div>
-        </div>
-        <hr />
-        <div id="Lists">
-          <div class="component-intro">
-            <h1>Lists</h1>
-            <p>
+        <div class="component">
+          <a href="documentation/lists.html"
+            ><h2 class="component-heading">Lists</h2>
+            <p class="component-desc">
               Lists represents a finite number of ordered or unordered values.
-            </p>
-          </div>
-
-          <h2 class="h4">List with no bullets</h2>
-
-          <div class="component-display-container">
-            <ul class="styled-list list-style-none list-container">
-              <li>list item1</li>
-              <li>list item2</li>
-              <li>list item3</li>
-            </ul>
-          </div>
-
-          <div class="code-snippet-display">
-            <code>
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522component-display-container%2522%253E%250A%2520%2520%2520%2520%253Cul%2520class%253D%2522styled-list%2520list-style-none%2520list-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253Elist%2520item1%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253Elist%2520item2%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253Elist%2520item3%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Ful%253E%250A%253C%252Fdiv%253E"
-                style="
-                  width: 643px;
-                  height: 320px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
-            </code>
-          </div>
-
-          <h2 class="h4">Spaced List</h2>
-
-          <div class="component-display-container">
-            <ul class="list-style-none inline-list list-container">
-              <li class="list-inline-item">list item1</li>
-              <li class="list-inline-item">list item2</li>
-              <li class="list-inline-item">list item3</li>
-            </ul>
-          </div>
-
-          <div class="code-snippet-display">
-            <code>
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522component-display-container%2522%253E%250A%2520%2520%2520%2520%253Cul%2520class%253D%2522list-style-none%2520inline-list%2520list-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-inline-item%2522%253Elist%2520item1%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-inline-item%2522%253Elist%2520item2%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-inline-item%2522%253Elist%2520item3%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Ful%253E%250A%253C%252Fdiv%253E"
-                style="
-                  width: 643px;
-                  height: 320px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
-            </code>
-          </div>
-
-          <h2 class="h4">Stacked List (Notifications)</h2>
-
-          <div class="component-display-container">
-            <ul class="stacked-list">
-              <li>
-                <a class="link-no-style">
-                  <div class="card-horizontal default-container">
-                    <div class="image-container">
-                      <img
-                        loading="lazy"
-                        class="img-responsive card-img"
-                        src="https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-                        alt="product-image"
-                      />
-                    </div>
-
-                    <div class="text-container">
-                      <div class="text-container-title">
-                        <h6>Mexican Salad</h6>
-                      </div>
-                      <div class="text-container-desc">
-                        <p class="body-cp-md">
-                          Starting @199/-<br />
-                          Order now
-                        </p>
-                        <time class="body-cp-sm text-light-weight"
-                          >2 mins ago</time
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="link-no-style">
-                  <div class="card-horizontal default-container">
-                    <div class="image-container">
-                      <img
-                        loading="lazy"
-                        class="img-responsive card-img"
-                        src="https://images.unsplash.com/photo-1557748362-4e95f0de4f6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=844&q=80"
-                        alt="product-image"
-                      />
-                    </div>
-
-                    <div class="text-container">
-                      <div class="text-container-title">
-                        <h6>Egg Platter</h6>
-                      </div>
-                      <div class="text-container-desc">
-                        <p class="body-cp-md">
-                          Starting @99/-<br />
-                          Order now
-                        </p>
-                        <time class="body-cp-sm text-light-weight">
-                          1 hour ago</time
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="code-snippet-display">
-            <code>
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522component-display-container%2522%253E%250A%2520%2520%2520%2520%253Cul%2520class%253D%2522stacked-list%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522link-no-style%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-horizontal%2520default-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522image-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520loading%253D%2522lazy%2522%2520class%253D%2522img-responsive%2520card-img%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fimages.unsplash.com%252Fphoto-1572449043416-55f4685c9bb7%253Fixlib%253Drb-1.2.1%2526ixid%253DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%2526auto%253Dformat%2526fit%253Dcrop%2526w%253D880%2526q%253D80%2522%2520alt%253D%2522product-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-container-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch6%253E%2520Mexican%2520Salad%253C%252Fh6%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-container-desc%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522body-cp-md%2522%253EStarting%2520%2540199%252F-%253Cbr%253E%2520Order%2520now%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctime%2520class%253D%2522body-cp-sm%2520text-light-weight%2522%253E2%2520mins%2520ago%253C%252Ftime%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522link-no-style%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-horizontal%2520default-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522image-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520loading%253D%2522lazy%2522%2520class%253D%2522img-responsive%2520card-img%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fimages.unsplash.com%252Fphoto-1557748362-4e95f0de4f6f%253Fixlib%253Drb-1.2.1%2526ixid%253DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%2526auto%253Dformat%2526fit%253Dcrop%2526w%253D844%2526q%253D80%2522%2520alt%253D%2522product-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-container-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch6%253E%2520Egg%2520Platter%2520%253C%252Fh6%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-container-desc%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522body-cp-md%2522%253EStarting%2520%254099%252F-%253Cbr%253E%2520Order%2520now%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctime%2520class%253D%2522body-cp-sm%2520text-light-weight%2522%253E%25201%2520hour%2520ago%253C%252Ftime%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
-                style="
-                  width: 989px;
-                  height: 1234px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
-            </code>
-          </div>
+            </p></a
+          >
         </div>
-
-        <hr />
-
-        <div id="Navigation">
-          <div class="component-intro">
-            <h1>Navigation</h1>
-            <p>
-              Navigation is the UI element on a webpage that includes links for
-              the other sections of the website.
-            </p>
-          </div>
-
-          <div class="component-display-container resize-container">
-            <nav class="nav-bar shadow-box">
-              <div class="nav-section">
-                <div class="burger nav-section-items">
-                  <div class="line1"></div>
-                  <div class="line2"></div>
-                  <div class="line3"></div>
-                </div>
-
-                <div class="nav-logo nav-section-items">
-                  <a class="link-no-style" href="/index.html">
-                    <img
-                      loading="lazy"
-                      src="https://images.unsplash.com/photo-1488642945284-f5b65425f15a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1051&q=80"
-                      alt="Logo"
-                      width="60"
-                      height="60"
-                    />
-                  </a>
-                </div>
-
-                <div class="nav-logo-title nav-section-items">
-                  <a class="link-no-style" href="/index.html">Home</a>
-                </div>
-
-                <ul class="nav-bar-links list-style-none nav-section-items">
-                  <li class="list-inline-item">
-                    <a class="link-no-style">Buy</a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="link-no-style">Rent</a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="link-no-style">Sell</a>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="nav-section">
-                <label class="search-bar nav-section-item-width50pc">
-                  <span class="search-bar-btn" type="submit"
-                    ><i class="fa fa-search"> </i
-                  ></span>
-                  <input
-                    class="search-bar-input"
-                    type="text"
-                    placeholder="Type to search"
-                    name="search"
-                  />
-                </label>
-
-                <ul
-                  class="nav-icons list-style-none nav-section-item-width50pc"
-                >
-                  <li class="list-inline-item hide-profile-mobile">
-                    <a class="nav-icon-link link-no-style">
-                      <span class="nav-icon">
-                        <i class="fas fa-user"></i>
-                      </span>
-                      <span class="nav-icon-text"> Profile </span>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="nav-icon-link link-no-style">
-                      <span class="nav-icon">
-                        <i class="fas fa-heart"></i>
-                      </span>
-                      <span class="nav-icon-text"> Wishlist </span>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="nav-icon-link link-no-style">
-                      <span class="nav-icon">
-                        <i class="fas fa-shopping-cart"></i>
-                      </span>
-                      <span class="nav-icon-text"> Cart </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-          <div class="code-snippet-display">
-            <code>
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522component-display-container%2520resize-container%2522%253E%250A%2520%2520%253Cnav%2520class%253D%2522nav-bar%2520shadow-box%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-section%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522burger%2520nav-section-items%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522line1%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522line2%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522line3%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-logo%2520nav-section-items%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522link-no-style%2522%2520href%253D%2522%252Findex.html%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fimages.unsplash.com%252Fphoto-1488642945284-f5b65425f15a%253Fixlib%253Drb-1.2.1%2526ixid%253DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%2526auto%253Dformat%2526fit%253Dcrop%2526w%253D1051%2526q%253D80%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522Logo%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520width%253D%252260%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520height%253D%252260%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-logo-title%2520nav-section-items%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522link-no-style%2522%2520href%253D%2522%252Findex.html%2522%253EHome%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522nav-bar-links%2520list-style-none%2520nav-section-items%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-inline-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522link-no-style%2522%253EBuy%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-inline-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522link-no-style%2522%253ERent%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-inline-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522link-no-style%2522%253ESell%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-section%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522search-bar%2520nav-section-item-width50pc%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522search-bar-btn%2522%2520type%253D%2522submit%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253Ci%2520class%253D%2522fa%2520fa-search%2522%253E%2520%253C%252Fi%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522search-bar-input%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Type%2520to%2520search%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520name%253D%2522search%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cul%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522nav-icons%2520list-style-none%2520nav-section-item-width50pc%2522%250A%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-inline-item%2520hide-profile-mobile%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522nav-icon-link%2520link-no-style%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522nav-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-user%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522nav-icon-text%2522%253E%2520Profile%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-inline-item%2522%253E%250A%2520%2520%2520"
-                style="
-                  width: 1024px;
-                  height: 1951px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
-            </code>
-          </div>
-        </div>
-        <hr />
-        <div id="Modal">
-          <div class="component-intro">
-            <h1>Modal</h1>
-            <p>
+        <div class="component">
+          <a href="documentation/modal.html"
+            ><h2 class="component-heading">Modal</h2>
+            <p class="component-desc">
               Modal is a web page element that displays in front of and
               deactivates all other page content.
-            </p>
-          </div>
-          <div class="component-display-container">
-            <div class="modal">
-              <div class="modal-header">
-                <span><i class="fas fa-lg fa-exclamation-triangle"></i></span>
-                <h3>Are you sure you want to do this action?</h3>
-              </div>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Tempora illum necessitatibus officia fugiat repudiandae! Tempore
-                nihil recusandae aperiam dolor facere.
-              </p>
-              <div class="actn-btns">
-                <button class="btn flex-items btn-outline-primary">
-                  Outline button
-                </button>
-                <button class="btn flex-items btn-solid-primary">
-                  Primary Button
-                </button>
-              </div>
-            </div>
-          </div>
+            </p></a
+          >
         </div>
-        <div class="code-snippet-display">
-          <code>
-            <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522modal%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522modal-header%2522%253E%250A%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-lg%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%253Ch3%253EAre%2520you%2520sure%2520you%2520want%2520to%2520do%2520this%2520action%253F%253C%252Fh3%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cp%253E%250A%2520%2520Lorem%2520ipsum%2520dolor%2520sit%252C%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Tempora%250A%2520%2520illum%2520necessitatibus%2520officia%2520fugiat%2520repudiandae%21%2520Tempore%2520nihil%250A%2520%2520recusandae%2520aperiam%2520dolor%2520facere.%250A%2520%2520%253C%252Fp%253E%250A%2520%2520%253Cdiv%2520class%253D%2522actn-btns%2522%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520flex-items%2520btn-outline-primary%2522%253E%2520Outline%2520button%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520flex-items%2520btn-solid-primary%2522%253EPrimary%2520Button%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-              style="
-                width: 793px;
-                height: 526px;
-                border: 0;
-                transform: scale(1);
-                overflow: hidden;
-              "
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
-          </code>
+        <div class="component">
+          <a href="documentation/navigation.html"
+            ><h2 class="component-heading">Navigation</h2>
+            <p class="component-desc">
+              Navigation is the UI element on a webpage that includes links for
+              the other sections of the website.
+            </p></a
+          >
         </div>
-
-        <hr />
-        <div id="Rating">
-          <div class="component-intro">
-            <h1>Rating</h1>
-            <p>
+        <div class="component">
+          <a href="documentation/rating.html"
+            ><h2 class="component-heading">Rating</h2>
+            <p class="component-desc">
               A rating is a review of a product or service made by a consumer
               who has experienced a service or purchased a product.
-            </p>
-          </div>
-
-          <div class="component-display-container display-flex-column">
-            <div class="star-ratings">
-              <i class="fa fa-lg fa-star checked"></i>
-              <i class="fa fa-lg fa-star checked"></i>
-              <i class="fa fa-lg fa-star checked"></i>
-              <i class="fa fa-lg fa-star"></i>
-              <i class="fa fa-lg fa-star"></i>
-            </div>
-            <div class="badge-ratings">
-              <p>3</p>
-              <i class="fa fa-lg fa-star"></i>
-            </div>
-          </div>
-          <div class="code-snippet-display">
-            <code>
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522star-ratings%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-lg%2520fa-star%2520checked%2522%253E%253C%252Fi%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-lg%2520fa-star%2520checked%2522%253E%253C%252Fi%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-lg%2520fa-star%2520checked%2522%253E%253C%252Fi%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-lg%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-lg%2520fa-star%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-ratings%2522%253E%250A%2520%2520%253Cp%253E%25203%253C%252Fp%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-lg%2520fa-star%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-                style="
-                  width: 512px;
-                  height: 441px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
-            </code>
-          </div>
+            </p></a
+          >
         </div>
-        <hr />
-        <div id="Toast">
-          <div class="component-intro">
-            <h1>Toast/Notify/Snackbar</h1>
-            <p>
-              Toast is just another name for a pop-up notification, a small
-              message that appears temporarily to communicate some information.
-            </p>
-          </div>
-
-          <div class="component-display-container display-flex-column">
-            <div class="toast tl-error">
-              <div class="tl-content-error">
-                <i class="fas fa-exclamation-circle"></i>
-                <p>Error Toast</p>
-              </div>
-            </div>
-            <br />
-            <div class="toast-lg tl-info">
-              <i class="fas fa-lg fa-lightbulb"></i>
-              <div>
-                <h3>Suggestion Toast</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Reiciendis expedita esse nihil quia quis fugit rerum similique
-                  beatae? Placeat, rem
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="code-snippet-display">
-            <code>
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522component-display-container%2520display-flex-column%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522toast%2520tl-error%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522tl-content-error%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253E%2520Error%2520Toast%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253Cbr%252F%253E%250A%2520%2520%253Cdiv%2520class%253D%2522toast-lg%2520tl-info%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-lg%2520fa-lightbulb%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Ch3%253ESuggestion%2520Toast%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Reiciendis%250A%2520%2520%2520%2520%2520%2520%2520%2520expedita%2520esse%2520nihil%2520quia%2520quis%2520fugit%2520rerum%2520similique%2520beatae%253F%2520Placeat%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520rem%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-                style="
-                  width: 805px;
-                  height: 611px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
-            </code>
-          </div>
+        <div class="component">
+          <a href="documentation/slider.html"
+            ><h2 class="component-heading">Slider</h2>
+            <p class="component-desc">
+              Sliders are used by users to search or filter something in a
+              particular range or at a particular value.
+            </p></a
+          >
         </div>
-        <hr />
-        <div id="Grid">
-          <div class="component-intro">
-            <h1>Simplified Grid</h1>
-            <p>Grid is used when we want sections in views.</p>
-          </div>
-
-          <div class="component-display-container display-flex-column">
-            <div class="grid-2-col">
-              <div class="img-container">
-                <img
-                  src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-                  alt="img-default"
-                  class="img-res"
-                />
-              </div>
-
-              <div class="grid-sample-child flex-center">
-                <h1>
-                  50% off on Starters. <br />
-                  Grab Today.
-                </h1>
-              </div>
-            </div>
-            <div class="grid-3-col">
-              <div class="card card-vertical">
-                <div class="img-container">
-                  <img
-                    src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-                    alt="product image"
-                    class="img-res"
-                  />
-                </div>
-
-                <div class="card-content">
-                  <h2 class="card-title">Lorem ipsum</h2>
-
-                  <span>Lorem ipsum dolor sit amet.</span>
-                  <div class="card-footer">
-                    <a class="btn flex-items btn-text-icon-primary"
-                      ><span class="btn-icon"
-                        ><i class="fas fa-shopping-cart"></i
-                      ></span>
-                      Lorem ipsum</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="card card-vertical">
-                <div class="img-container">
-                  <img
-                    src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-                    alt="product image"
-                    class="img-res"
-                  />
-                </div>
-
-                <div class="card-content">
-                  <h2 class="card-title">Lorem ipsum</h2>
-
-                  <span>Lorem ipsum dolor sit amet.</span>
-                  <div class="card-footer">
-                    <a class="btn flex-items btn-text-icon-primary"
-                      ><span class="btn-icon"
-                        ><i class="fas fa-shopping-cart"></i
-                      ></span>
-                      Lorem ipsum</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="card card-vertical">
-                <div class="img-container">
-                  <img
-                    src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-                    alt="product image"
-                    class="img-res"
-                  />
-                </div>
-
-                <div class="card-content">
-                  <h2 class="card-title">Lorem ipsum</h2>
-
-                  <span>Lorem ipsum dolor sit amet.</span>
-                  <div class="card-footer">
-                    <a class="btn flex-items btn-text-icon-primary"
-                      ><span class="btn-icon"
-                        ><i class="fas fa-shopping-cart"></i
-                      ></span>
-                      Lorem ipsum</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="code-snippet-display">
-            <code>
-              <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid-2-col%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522img-container%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fimages.unsplash.com%252Fphoto-1546069901-ba9599a7e63c%253Fixlib%253Drb-1.2.1%2526ixid%253DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%2526auto%253Dformat%2526fit%253Dcrop%2526w%253D880%2526q%253D80%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522img-default%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522img-res%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522grid-sample-child%2520flex-center%2522%253E%250A%2520%2520%2520%2520%253Ch1%253E%250A%2520%2520%2520%2520%2520%252050%2525%2520off%2520on%2520Starters.%2520%253Cbr%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520Grab%2520Today.%250A%2520%2520%2520%2520%253C%252Fh1%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-              style="width: 1024px; height: 533px; border:0; transform: scale(1); overflow:hidden;"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
-            </code>
-          </div>
+        <div class="component">
+          <a href="documentation/snackbar.html"
+            ><h2 class="component-heading">Snackbar</h2>
+            <p class="component-desc">
+              Display text using well-defined typographic styles.
+            </p></a
+          >
         </div>
-
-      </section>
+        <div class="component">
+          <a href="documentation/typography.html"
+            ><h2 class="component-heading">Typography</h2>
+            <p class="component-desc">
+              Display an important message globally.
+            </p></a
+          >
+        </div>
+      </div>
     </div>
-    <script src="./Documentation/docs-nav.js"></script>
-    <script src="./Documentation/docs-sidebar.js"></script>
   </body>
 </html>
