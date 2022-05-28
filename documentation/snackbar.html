@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snackbars | Coral UI</title>
+    <link rel="stylesheet" href="../../Components/reset.css" />
+    <link rel="stylesheet" href="../../Components/coral-ui.css" />
+    <link rel="stylesheet" href="../../Components/util.css" />
+    <link rel="stylesheet" href="../../Components/docs.css" />
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
+    <script src="/javascript/snackbars.js" async></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <section class="navbar-brand">
+          <a href="/index.html"> Coral UI </a>
+        </section>
+        <section class="navbar-menu">
+          <ul class="navbar-links">
+            <li class="navbar-link">
+              <a href="/docs.html"> Documentation</a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+    <div class="main snackbars">
+      <h1 class="text-center">Snackbars</h1>
+      <div class="showcase">
+        <button
+          id="baseline-btn"
+          class="btn btn-solid-primary showSnackbar-btn"
+          data-button="baseline"
+        >
+          Add to Favorite
+        </button>
+        <div id="baseline-snackbar" class="snackbar baseline-snackbar">
+          <span class="snackbar-text">Marked as favorite. </span>
+          <div class="snackbar-actions">
+            <button class="snackbar-btn">Go back</button>
+            <span
+              id="baseline-snackbar-close"
+              class="material-icons snackbar-icon"
+              data-snackbar="baseline"
+            >
+              close
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <iframe
+      src="https://carbon.now.sh/embed?bg=rgba%28254%2C201%2C241%2C1%29&t=night-owl&wt=none&l=javascript&width=636&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=48px&ln=false&fl=1&fm=Hack&fs=10px&lh=156%25&si=false&es=2x&wm=false&code=%253Cbutton%250A%2520%2520id%253D%2522baseline-btn%2522%250A%2520%2520class%253D%2522btn%2520btn-solid-primary%2520showSnackbar-btn%2522%250A%2520%2520data-button%253D%2522baseline%2522%250A%253E%250A%2520%2520Add%2520to%2520Favorite%250A%253C%252Fbutton%253E%250A%253Cdiv%2520id%253D%2522baseline-snackbar%2522%2520class%253D%2522snackbar%2520baseline-snackbar%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522snackbar-text%2522%253EMarked%2520as%2520favorite.%2520%253C%252Fspan%253E%250A%2520%2520%253Cdiv%2520class%253D%2522snackbar-actions%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522snackbar-btn%2522%253EGo%2520back%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cspan%250A%2520%2520%2520%2520%2520%2520id%253D%2522baseline-snackbar-close%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522material-icons%2520snackbar-icon%2522%250A%2520%2520%2520%2520%2520%2520data-snackbar%253D%2522baseline%2522%250A%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520close%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+      style="
+        width: 636px;
+        height: 481px;
+        border: 0;
+        transform: scale(1);
+        overflow: hidden;
+      "
+      sandbox="allow-scripts allow-same-origin"
+    >
+    </iframe>
+  </body>
+</html>
