@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alerts | Coral UI</title>
+    <link rel="stylesheet" href="../Components/reset.css" />
+    <link rel="stylesheet" href="../Components/coral-ui.css" />
+    <link rel="stylesheet" href="../Components/util.css" />
+    <link rel="stylesheet" href="../Components/docs.css" />
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <section class="navbar-brand">
+          <a href="/index.html"> Coral UI </a>
+        </section>
+        <section class="navbar-menu">
+          <ul class="navbar-links">
+            <li class="navbar-link">
+              <a href="/docs.html"> Documentation</a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+    <div class="main alerts">
+      <h1 class="text-center">Alerts</h1>
+      <p>
+        Display text in a dialog box that pops up on the screen and conveys
+        meaning through color with a handful of color utility classes.
+      </p>
+      <h2>Primary Alert</h2>
+
+      <div class="showcase">
+        <div class="alert alert-primary">
+          <span class="alert-content">3 People viewed your Profile</span>
+        </div>
+      </div>
+
+      <h2>Warning Alert</h2>
+
+      <div class="showcase">
+        <div class="alert alert-warning">
+          <span class="material-icons"> warning </span>
+          <span class="alert-content">Please use a stronger password. </span>
+        </div>
+      </div>
+
+      <h2>Error Alert</h2>
+
+      <div class="showcase">
+        <div class="alert alert-error">
+          <span class="material-icons alert-icon"> error </span>
+          <span class="alert-content">This username is already taken</span>
+        </div>
+      </div>
+
+      <h2>Success Alert</h2>
+
+      <div class="showcase">
+        <div class="alert alert-success">
+          <span class="material-icons alert-icon"> check_circle </span>
+          <span class="alert-content">Your payment was successful. </span>
+        </div>
+      </div>
+    </div>
+    <iframe
+      src="https://carbon.now.sh/embed?bg=rgba%28254%2C201%2C241%2C1%29&t=night-owl&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=48px&ln=false&fl=1&fm=Hack&fs=10px&lh=156%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522showcase%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-content%2522%253EThis%2520is%2520a%2520PRIMARY%2520alert%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253E%2520warning%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-content%2522%253EThis%2520is%2520a%2520WARNING%2520alert%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-error%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520alert-icon%2522%253E%2520error%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-content%2522%253EThis%2520is%2520an%2520ERRRRROR%2520alert%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%250A%2520%2520%2509%253Cspan%2520class%253D%2522material-icons%2520alert-icon%2522%253E%2520check_circle%2520%253C%252Fspan%253E%250A%2520%2520%2509%253Cspan%2520class%253D%2522alert-content%2522%253EThis%2520is%2520a%2520SUCCESS%2520alert%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+      style="
+        width: 526px;
+        height: 451px;
+        border: 0;
+        transform: scale(1);
+        overflow: hidden;
+      "
+      sandbox="allow-scripts allow-same-origin"
+    >
+    </iframe>
+
+    <script src="../javascript/docs.js"></script>
+  </body>
+</html>
