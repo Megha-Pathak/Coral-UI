@@ -29,6 +29,19 @@ body {
   border: 1px solid var(--color-background-dark);
 }
 
+.showcase-typography{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 5px;
+  background-color: var(--color-primary-dark);
+  border: 1px solid var(--color-background-dark);
+}
+
 footer {
   text-align: center;
   background-color: var(--color-background);
