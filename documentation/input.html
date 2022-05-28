@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inputs | Coral UI</title>
+    <link rel="stylesheet" href="../../Components/reset.css" />
+    <link rel="stylesheet" href="../../Components/coral-ui.css" />
+    <link rel="stylesheet" href="../../Components/util.css" />
+    <link rel="stylesheet" href="../../Components/docs.css" />
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <section class="navbar-brand">
+          <a href="/index.html"> Coral UI </a>
+        </section>
+        <section class="navbar-menu">
+          <ul class="navbar-links">
+            <li class="navbar-link">
+              <a href="/docs.html"> Documentation</a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+    <div class="main inputs">
+      <h1 class="text-center">Inputs</h1>
+
+      <h2>Basic Inputs</h2>
+
+      <div class="showcase">
+        <form class="form">
+          <div class="input-group input-text">
+            <label for="username">Username</label>
+            <input
+              class="input"
+              type="text"
+              name="username"
+              id="username"
+              placeholder="John Doe"
+            />
+          </div>
+          <div class="input-group input-email">
+            <label for="email">Email*</label>
+            <input
+              class="input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="johndoe@gmail.com"
+              required
+            />
+          </div>
+          <div class="input-group input-text">
+            <label for="country">Country</label>
+            <input
+              class="input"
+              type="text"
+              name="country"
+              id="country"
+              placeholder="India"
+              value="India"
+              disabled
+            />
+          </div>
+          <div class="input-group input-text">
+            <label for="city">City</label>
+            <input
+              class="input"
+              type="text"
+              name="city"
+              id="city"
+              placeholder="Bangalore"
+              value="Jaipur"
+              readonly
+            />
+          </div>
+        </form>
+      </div>
+
+      <h2>Errored / Successful Inputs</h2>
+
+      <div class="showcase">
+        <form class="form">
+          <div class="input-group input-password error">
+            <label for="password">Password*</label>
+            <input
+              class="input"
+              type="password"
+              name="password"
+              id="password"
+              required
+            />
+            <div class="validity-message">Your Password is Incorrect!</div>
+          </div>
+          <div class="input-group input-password success">
+            <label for="confirmPassword">Confirm Password*</label>
+            <input
+              class="input"
+              type="password"
+              name="confirmPassword"
+              id="confirmPassword"
+              required
+            />
+            <div class="validity-message">Password Matched!</div>
+          </div>
+        </form>
+        <iframe
+        src="https://carbon.now.sh/embed?bg=rgba%28254%2C201%2C241%2C1%29&t=night-owl&wt=none&l=javascript&width=636&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=48px&ln=false&fl=1&fm=Hack&fs=10px&lh=156%25&si=false&es=2x&wm=false&code=%253Cform%2520class%253D%2522form%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input-group%2520input-text%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522username%2522%253EUsername%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520class%253D%2522input%2522%250A%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520name%253D%2522username%2522%250A%2520%2520%2520%2520%2520%2520id%253D%2522username%2522%250A%2520%2520%2520%2520%2520%2520placeholder%253D%2522John%2520Doe%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input-group%2520input-email%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522email%2522%253EEmail*%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520class%253D%2522input%2522%250A%2520%2520%2520%2520%2520%2520type%253D%2522email%2522%250A%2520%2520%2520%2520%2520%2520name%253D%2522email%2522%250A%2520%2520%2520%2520%2520%2520id%253D%2522email%2522%250A%2520%2520%2520%2520%2520%2520placeholder%253D%2522johndoe%2540gmail.com%2522%250A%2520%2520%2520%2520%2520%2520required%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input-group%2520input-text%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522country%2522%253ECountry%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520class%253D%2522input%2522%250A%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520name%253D%2522country%2522%250A%2520%2520%2520%2520%2520%2520id%253D%2522country%2522%250A%2520%2520%2520%2520%2520%2520placeholder%253D%2522India%2522%250A%2520%2520%2520%2520%2520%2520value%253D%2522India%2522%250A%2520%2520%2520%2520%2520%2520disabled%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input-group%2520input-text%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522city%2522%253ECity%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520class%253D%2522input%2522%250A%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520name%253D%2522city%2522%250A%2520%2520%2520%2520%2520%2520id%253D%2522city%2522%250A%2520%2520%2520%2520%2520%2520placeholder%253D%2522Bangalore%2522%250A%2520%2520%2520%2520%2520%2520value%253D%2522Jaipur%2522%250A%2520%2520%2520%2520%2520%2520readonly%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fform%253E"
+        style="width: 636px; height: 902px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+      </div>
+    <script>
+      document
+        .querySelector(".btn")
+        .addEventListener("click", (e) => e.preventDefault());
+    </script>
+  </body>
+</html>

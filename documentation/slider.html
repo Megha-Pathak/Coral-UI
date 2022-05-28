@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sliders | Coral UI</title>
+    <link rel="stylesheet" href="../../Components/reset.css" />
+    <link rel="stylesheet" href="../../Components/coral-ui.css" />
+    <link rel="stylesheet" href="../../Components/util.css" />
+    <link rel="stylesheet" href="../../Components/docs.css" />
+    <script src="/javascript/sliders.js" async></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <section class="navbar-brand">
+          <a href="/index.html"> Coral UI </a>
+        </section>
+        <section class="navbar-menu">
+          <ul class="navbar-links">
+            <li class="navbar-link">
+              <a href="/docs.html"> Documentation</a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+    <div class="main sliders">
+      <h1 class="text-center">Slider</h1>
+      <h2>Range Slider</h2>
+      <div class="showcase">
+        <div class="slider-wrapper">
+          <h3>Price</h3>
+          <div class="slider-input">
+            <div class="slider-field">
+              <span>Min</span>
+              <input
+                type="number"
+                name="input-min"
+                id="input-min"
+                class="input input-min"
+                value="2500"
+              />
+            </div>
+            -
+            <div class="slider-field">
+              <span>Max</span>
+              <input
+                type="number"
+                name="input-max"
+                id="input-max"
+                class="input input-max"
+                value="7500"
+              />
+            </div>
+          </div>
+          <div class="slider-range">
+            <div class="progress"></div>
+            <input
+              type="range"
+              name="range-min"
+              id="range-min"
+              class="range-min"
+              min="0"
+              max="10000"
+              value="2500"
+              step="100"
+            />
+            <input
+              type="range"
+              name="range-max"
+              id="range-max"
+              class="range-max"
+              min="0"
+              max="10000"
+              value="7500"
+              step="100"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <iframe
+      src="https://carbon.now.sh/embed?bg=rgba%28254%2C201%2C241%2C1%29&t=night-owl&wt=none&l=javascript&width=636&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=48px&ln=false&fl=1&fm=Hack&fs=10px&lh=156%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522main%2520sliders%2522%253E%250A%2520%2520%253Ch1%2520class%253D%2522text-center%2522%253ESlider%253C%252Fh1%253E%250A%2520%2520%253Ch2%253ERange%2520Slider%253C%252Fh2%253E%250A%2520%2520%253Cdiv%2520class%253D%2522showcase%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522slider-wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch3%253EPrice%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522slider-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522slider-field%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EMin%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522number%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520name%253D%2522input-min%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522input-min%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522input%2520input-min%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520value%253D%25222500%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520-%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522slider-field%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EMax%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522number%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520name%253D%2522input-max%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522input-max%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522input%2520input-max%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520value%253D%25227500%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522slider-range%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522progress%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522range%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520name%253D%2522range-min%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522range-min%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522range-min%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520min%253D%25220%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520max%253D%252210000%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520value%253D%25222500%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520step%253D%2522100%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522range%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520name%253D%2522range-max%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522range-max%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522range-max%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520min%253D%25220%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520max%253D%252210000%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520value%253D%25227500%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520step%253D%2522100%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+      style="
+        width: 636px;
+        height: 1044px;
+        border: 0;
+        transform: scale(1);
+        overflow: hidden;
+      "
+      sandbox="allow-scripts allow-same-origin"
+    >
+    </iframe>
+  </body>
+</html>
