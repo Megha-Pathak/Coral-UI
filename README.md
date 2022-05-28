@@ -13,7 +13,7 @@ Coral UI is your underwater theme inspired, accessible, open-source repository o
 ```html
 <link
   rel="stylesheet"
-  href="https://coral-ui.vercel.app/Components/coral-ui.css"
+  href="https://coralui.netlify.app/components/coral-ui.css"
 />
 ```
 
