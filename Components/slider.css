@@ -1,0 +1,67 @@
+.slider-wrapper {
+  background-color: var(--color-background-dark);
+  border: 1px solid var(--color-background-darker);
+  border-radius: 5px;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.slider-input {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.input-min,
+.input-max {
+  width: 5.5rem;
+  -moz-appearance: textfield;
+}
+
+.slider-range {
+  margin-top: 0.5rem;
+  height: 5px;
+  border-radius: 5px;
+  background: var(--accents-4);
+  position: relative;
+}
+
+.slider-range .progress {
+  height: 5px;
+  border-radius: 5px;
+  background: var(--color-primary-dark);
+  position: absolute;
+  left: 25%;
+  right: 25%;
+}
+
+.slider-range input {
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: none;
+  -webkit-appearance: none;
+  pointer-events: none;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  height: 1.25rem;
+  width: 1.25rem;
+  border-radius: 50%;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  background: var(--color-primary-dark);
+}
+
+input[type='range']::-moz-range-thumb {
+  height: 1.25rem;
+  width: 1.25rem;
+  border: none;
+  border-radius: 50%;
+  pointer-events: auto;
+  -moz-appearance: none;
+  background: var(--color-primary-dark);
+}

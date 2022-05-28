@@ -1,21 +1,11 @@
-.star-ratings {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  .checked {
-    color: var(--dk-yellow);
-  }
-  
-  .badge-ratings {
-    background-color: var(--primary-color);
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    max-width: max-content;
-    padding: 0.5rem;
-    border-radius: 0.4rem;
-    margin-top: 1rem;
-  }
-  
+.ratings {
+  display: flex;
+}
+
+.rating-icon {
+  color: var(--color-warning-dark);
+}
+
+.ratings-sm > .rating-icon {
+  font-size: 0.875rem;
+}
