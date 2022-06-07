@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="assets/Coralui.png" width=100 alt="Musology">
+    <img src="assets/Coralui.png" width=100 alt="coralui">
     <br>
     <br>
  <a href="https://app.netlify.com/sites/coralui/deploys"><img src="https://api.netlify.com/api/v1/badges/c5149ced-8138-493d-9ec2-ae72f4cde641/deploy-status" alt="Netlify Status"></a>
