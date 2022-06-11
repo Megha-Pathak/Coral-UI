@@ -23,20 +23,20 @@ Follow the [Installation guide](https://coralui.netlify.app/documentation/instal
 Coral UI is powered with the following components. These components are always being updated and imporved.
 
 <ul>
-    <li><a href="https://coral-ui.vercel.app/documentation/alert.html">Alerts</a></li>
-    <li><a href="https://coral-ui.vercel.app/documentation/avatar.html">Avatar</a></li>
-    <li><a href="https://coral-ui.vercel.app/documentation/badge.html">Badge</a></li>
-    <li><a href="https://coral-ui.vercel.app/documentation/button.html">Button</a></li>
-    <li><a href="https://coral-ui.vercel.app/documentation/card.html">Cards</a></li>
-    <li><a href="https://coral-ui.vercel.app/documentation/grid.html">Grids</a></li>
-    <li><a href="https://coral-ui.vercel.app/documentation/image.html">Image</a></li>
-    <li><a href="https://coral-ui.vercel.app/documentation/input.html">Input</a></li>
-    <li><a href="https://coral-ui.vercel.app/documentation/lists.html"> Lists</a></li>
-    <li><a href="https://coral-ui.vercel.app/documentation/modal.html"> Modal </a></li>
-    <li><a href="https://coral-ui.vercel.app/documentation/rating.html"> Rating </a></li>
-    <li><a href="https://coral-ui.vercel.app/documentation/slider.html"> Slider </a></li>
-    <li><a href="https://coral-ui.vercel.app/documentation/snackbar.html"> Snackbar </a></li>
-    <li><a href="https://coral-ui.vercel.app/documentation/typography.html"> Typography </a></li>
+    <li><a href="https://coralui.netlify.app/documentation/alert.html">Alerts</a></li>
+    <li><a href="https://coralui.netlify.app/documentation/avatar.html">Avatar</a></li>
+    <li><a href="https://coralui.netlify.app/documentation/badge.html">Badge</a></li>
+    <li><a href="https://coralui.netlify.app/documentation/button.html">Button</a></li>
+    <li><a href="https://coralui.netlify.app/documentation/card.html">Cards</a></li>
+    <li><a href="https://coralui.netlify.app/documentation/grid.html">Grids</a></li>
+    <li><a href="https://coralui.netlify.app/documentation/image.html">Image</a></li>
+    <li><a href="https://coralui.netlify.app/documentation/input.html">Input</a></li>
+    <li><a href="https://coralui.netlify.app/documentation/lists.html"> Lists</a></li>
+    <li><a href="https://coralui.netlify.app/documentation/modal.html"> Modal </a></li>
+    <li><a href="https://coralui.netlify.app/documentation/rating.html"> Rating </a></li>
+    <li><a href="https://coralui.netlify.app/documentation/slider.html"> Slider </a></li>
+    <li><a href="https://coralui.netlify.app/documentation/snackbar.html"> Snackbar </a></li>
+    <li><a href="https://coralui.netlify.app/documentation/typography.html"> Typography </a></li>
 </ul>
 
 ## Author
